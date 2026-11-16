@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Marques | Digital Marketing & Strategy Portfolio 2026</title>
+  <meta name="description" content="Portfólio de Marketing Digital e Estratégia de Daniel Marques. Estratégia de marca, social media, auditoria de marketing e análise de dados.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Pyodide for In-Browser Python Execution -->
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js" defer></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= TOP NAVIGATION / ÍNDICE ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-dot"></span>
+        <span class="logo-name">DANIEL MARQUES</span>
+        <span class="logo-year">2026</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link"><i class="fa-regular fa-user"></i> Sobre</a></li>
+          <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Percurso</a></li>
+          <li><a href="#tools" class="nav-link"><i class="fa-solid fa-screwdriver-wrench"></i> Ferramentas</a></li>
+          <li><a href="#methodology" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Metodologia</a></li>
+          <li><a href="#python-lab" class="nav-link"><i class="fa-brands fa-python"></i> Python Lab</a></li>
+          <li><a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projetos</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-regular fa-paper-plane"></i> Contactos</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://canva.link/8r5ul8tiru9cutq" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+          <i class="fa-solid fa-file-pdf"></i> Ver CV
+        </a>
+        <button id="theme-toggle" class="icon-btn" title="Alternar tema">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="mobile-toggle" class="icon-btn mobile-only" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-decorations">
+      <div class="circle-arc circle-arc-1"></div>
+      <div class="circle-arc circle-arc-2"></div>
+      <div class="dot-grid"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge-row">
+        <span class="pill-badge pill-orange">
+          <span class="pulse-dot"></span> Disponível para Oportunidades
+        </span>
+        <span class="pill-badge pill-neutral">Lisboa, Portugal</span>
+      </div>
+
+      <div class="hero-titles">
+        <p class="hero-eyebrow">DIGITAL MARKETING & STRATEGY</p>
+        <h1 class="hero-title">
+          PORTFOLIO <span class="highlight-year">2026</span>
+        </h1>
+        <p class="hero-subtitle">
+          Estratégia, Marca, Social Media e Análise de Performance com foco em resultados mensuráveis e posicionamento distintivo.
+        </p>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-down"></i> Explorar Projetos
+        </a>
+        <a href="#python-lab" class="btn btn-secondary">
+          <i class="fa-brands fa-python"></i> Simulador ROI em Python
+        </a>
+        <a href="https://canva.link/177j9xht3zhy7vm" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+          <i class="fa-solid fa-palette"></i> Ver Design no Canva
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT & CORE PILLARS ================= -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <!-- Left: Bio & Contacts Card -->
+        <div class="about-bio-card">
+          <div class="about-header">
+            <div class="avatar-wrapper">
+              <div class="avatar-circle">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+            </div>
+            <div>
+              <span class="eyebrow-tag">ABOUT ME</span>
+              <h2 class="section-title">Olá, o meu nome é <span class="text-orange">DANIEL.</span></h2>
+            </div>
+          </div>
+
+          <p class="bio-text">
+            Trato cada marca como um <strong>projeto único</strong>. Desenvolvo a estratégia que molda a sua comunicação e identidade de marca, com um foco claro: estabelecer uma <strong>posição distintiva no mercado</strong>.
+          </p>
+
+          <!-- Floating Contact Pill Card -->
+          <div class="contact-pill-card">
+            <div class="contact-pill-header">
+              <i class="fa-solid fa-address-card"></i> CONTACTOS RÁPIDOS
+            </div>
+            <div class="contact-quick-list">
+              <a href="tel:+351965711655" class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+351 965 711 655</span>
+              </a>
+              <button class="contact-item copy-btn" data-copy="danielam.workmail@gmail.com" title="Clique para copiar">
+                <i class="fa-solid fa-envelope"></i>
+                <span>danielam.workmail@gmail.com</span>
+                <i class="fa-regular fa-copy copy-icon"></i>
+              </button>
+              <a href="https://www.linkedin.com/in/daniel-amorim-marques-2092b6295/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>daniel-amorim-marques</span>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 4 Neo-Brutalist Core Pillars -->
+        <div class="pillars-container">
+          <div class="pillars-header">
+            <span class="eyebrow-tag">CORE PILLARS</span>
+            <h3 class="pillars-title">Áreas de Especialização</h3>
+            <p class="pillars-sub">Clique em cada pilar para ver o foco de atuação:</p>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card active" data-pillar="strategy">
+              <div class="pillar-icon"><i class="fa-solid fa-chess"></i></div>
+              <h4 class="pillar-name">STRATEGY</h4>
+              <p class="pillar-desc">Go-To-Market, posicionamento de marca, 4 C's e planos de comunicação estruturados.</p>
+              <span class="pillar-tag">Planeamento 360°</span>
+            </div>
+
+            <div class="pillar-card" data-pillar="branding">
+              <div class="pillar-icon"><i class="fa-solid fa-fingerprint"></i></div>
+              <h4 class="pillar-name">BRANDING</h4>
+              <p class="pillar-desc">Construção de território de marca, tom de voz, identidade verbal e visual.</p>
+              <span class="pillar-tag">Diferenciação</span>
+            </div>
+
+            <div class="pillar-card" data-pillar="social">
+              <div class="pillar-icon"><i class="fa-solid fa-hashtag"></i></div>
+              <h4 class="pillar-name">SOCIAL MEDIA</h4>
+              <p class="pillar-desc">Gestão de canais, calendários editoriais, community management e campanhas.</p>
+              <span class="pillar-tag">Engajamento</span>
+            </div>
+
+            <div class="pillar-card" data-pillar="audit">
+              <div class="pillar-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <h4 class="pillar-name">MARKETING AUDIT</h4>
+              <p class="pillar-desc">Diagnóstico de presença digital, análise de concorrentes, funil de conversão e métricas.</p>
+              <span class="pillar-tag">Otimização</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE & ACADEMIC TIMELINE ================= -->
+  <section class="timeline-section" id="experience">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="eyebrow-tag light">PERCURSO & EXPERIÊNCIA</span>
+        <h2 class="section-title text-white">Trajetória Profissional & Académica</h2>
+        <p class="section-sub text-white-80">Uma formação sólida aliada à prática em eventos de dimensão nacional e consultoria de estratégia.</p>
+      </div>
+
+      <div class="timeline-split-grid">
+        
+        <!-- Column 1: Professional Experience -->
+        <div class="timeline-col">
+          <div class="timeline-col-header">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+          </div>
+
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="role-badge">Social Media Marketing Assistant</span>
+              <span class="time-badge"><i class="fa-regular fa-calendar"></i> Out 2025 – Fev 2026</span>
+            </div>
+            <h4 class="company-title">STREAM PLAN EVENTS — Lisboa</h4>
+            <p class="project-tag"><i class="fa-solid fa-flag-checkered"></i> <strong>Projeto:</strong> Ride Across Portugal</p>
+
+            <ul class="duties-list">
+              <li><i class="fa-solid fa-check"></i> Pesquisa de Mercado & Comportamento do Consumidor</li>
+              <li><i class="fa-solid fa-check"></i> Gestão de Redes Sociais & Criação de Conteúdo</li>
+              <li><i class="fa-solid fa-check"></i> Community Management & Agendamento Estratégico</li>
+              <li><i class="fa-solid fa-check"></i> Estratégia de Campanhas e Planeamento</li>
+              <li><i class="fa-solid fa-check"></i> Métricas de Performance, Relatórios & Analytics</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 2: Academic Background -->
+        <div class="timeline-col">
+          <div class="timeline-col-header">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>PERCURSO ACADÉMICO</h3>
+          </div>
+
+          <!-- Academic Card 1 -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="role-badge">CTeSP em Marketing Digital</span>
+              <span class="grade-pill"><i class="fa-solid fa-star"></i> Média: 18 / 20</span>
+            </div>
+            <span class="time-badge"><i class="fa-regular fa-calendar"></i> Out 2024 – Jul 2026</span>
+            <h4 class="company-title">Instituto Politécnico Lusófono (IPLUSO) — Lisboa</h4>
+            <div class="academic-highlight">
+              <div class="highlight-badge">
+                <i class="fa-solid fa-award"></i> Estágio Curricular: <strong>Inovcorp</strong>
+              </div>
+              <p class="grade-note">Avaliação de Estágio: <strong class="text-orange">19 / 20</strong></p>
+              <p class="highlight-text">Planos de comunicação, campanhas publicitárias e estratégias de lançamento de produtos/serviços.</p>
+            </div>
+          </div>
+
+          <!-- Academic Card 2 -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="role-badge">Digital Marketing & Strategy</span>
+              <span class="grade-pill"><i class="fa-solid fa-star"></i> Nota: 17 / 20</span>
+            </div>
+            <span class="time-badge"><i class="fa-regular fa-calendar"></i> Mar 2024 – Jul 2024</span>
+            <h4 class="company-title">EDIT. – Disruptive Digital Education</h4>
+            <div class="academic-highlight">
+              <p class="highlight-text"><i class="fa-solid fa-bullseye"></i> <strong>Projeto 360° de Marketing:</strong> Bandida do Pomar — estratégia integral de marca e comunicação.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TOOLS & TECH STACK ================= -->
+  <section class="tools-section" id="tools">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="eyebrow-tag">TECH STACK & SKILLS</span>
+        <h2 class="section-title">Ferramentas & Tecnologias</h2>
+        <p class="section-sub">O ecossistema digital utilizado para análise de dados, automação, publicidade e criação de conteúdo.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="tools-filter-wrapper">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="analytics">Analytics & BI</button>
+        <button class="filter-btn" data-filter="ads">Ads & Gestão</button>
+        <button class="filter-btn" data-filter="design">Design & CMS</button>
+      </div>
+
+      <div class="tools-grid">
+        <div class="tool-card" data-category="analytics">
+          <i class="fa-solid fa-chart-line tool-icon text-orange"></i>
+          <span class="tool-name">Google Analytics (GA4)</span>
+          <span class="tool-tag">Métricas & Tráfego</span>
+        </div>
+        <div class="tool-card" data-category="ads">
+          <i class="fa-brands fa-meta tool-icon" style="color: #0668E1;"></i>
+          <span class="tool-name">Meta Ads & Suite</span>
+          <span class="tool-tag">Paid Social & Gestão</span>
+        </div>
+        <div class="tool-card" data-category="ads">
+          <i class="fa-brands fa-google tool-icon" style="color: #EA4335;"></i>
+          <span class="tool-name">Google Ads</span>
+          <span class="tool-tag">Search & Display</span>
+        </div>
+        <div class="tool-card" data-category="analytics">
+          <i class="fa-solid fa-chart-simple tool-icon" style="color: #4285F4;"></i>
+          <span class="tool-name">Looker Studio</span>
+          <span class="tool-tag">Dashboards</span>
+        </div>
+        <div class="tool-card" data-category="analytics">
+          <i class="fa-solid fa-chart-pie tool-icon" style="color: #F2C811;"></i>
+          <span class="tool-name">Power BI</span>
+          <span class="tool-tag">Business Intelligence</span>
+        </div>
+        <div class="tool-card" data-category="design">
+          <i class="fa-solid fa-pen-nib tool-icon" style="color: #00C4CC;"></i>
+          <span class="tool-name">Canva Pro</span>
+          <span class="tool-tag">Design & Protótipo</span>
+        </div>
+        <div class="tool-card" data-category="design">
+          <i class="fa-brands fa-shopify tool-icon" style="color: #96BF48;"></i>
+          <span class="tool-name">Shopify</span>
+          <span class="tool-tag">E-Commerce</span>
+        </div>
+        <div class="tool-card" data-category="ads">
+          <i class="fa-brands fa-mailchimp tool-icon" style="color: #FFE01B;"></i>
+          <span class="tool-name">Intuit Mailchimp</span>
+          <span class="tool-tag">Email Automation</span>
+        </div>
+        <div class="tool-card" data-category="design">
+          <i class="fa-brands fa-wordpress tool-icon" style="color: #21759B;"></i>
+          <span class="tool-name">WordPress</span>
+          <span class="tool-tag">CMS & SEO</span>
+        </div>
+        <div class="tool-card" data-category="design">
+          <i class="fa-solid fa-note-sticky tool-icon" style="color: #111;"></i>
+          <span class="tool-name">Notion</span>
+          <span class="tool-tag">Gestão & Calendário</span>
+        </div>
+        <div class="tool-card" data-category="analytics">
+          <i class="fa-brands fa-python tool-icon" style="color: #3776AB;"></i>
+          <span class="tool-name">Python & Data</span>
+          <span class="tool-tag">Automação & ROI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= METHODOLOGY ================= -->
+  <section class="methodology-section" id="methodology">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="eyebrow-tag">COMO TRABALHO</span>
+        <h2 class="section-title">A Minha Metodologia</h2>
+        <p class="section-sub">Abordagem estratégica baseada em dados para soluções integradas e com impacto comercial duradouro.</p>
+      </div>
+
+      <!-- 4-Step Interactive Cycle Grid -->
+      <div class="methodology-grid">
+        
+        <div class="method-card active" data-step="1">
+          <div class="step-badge">01</div>
+          <div class="method-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3 class="method-step-title">ANALYSIS</h3>
+          <p class="method-subtitle">Os 4 C's da Estratégia de Marca</p>
+          <ul class="method-checklist">
+            <li>Análise de mercado e tendências emergentes.</li>
+            <li>Benchmarking e análise de concorrentes diretos/indiretos.</li>
+            <li>Diagnóstico e posicionamento de marca.</li>
+            <li>Compreensão de necessidades e comportamentos do consumidor.</li>
+            <li>Análise cultural e contexto envolvente.</li>
+          </ul>
+          <div class="step-connector right-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <div class="method-card" data-step="2">
+          <div class="step-badge">02</div>
+          <div class="method-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          <h3 class="method-step-title">STRATEGY</h3>
+          <p class="method-subtitle">Plano de Comunicação & Editorial</p>
+          <ul class="method-checklist">
+            <li>Definição clara de objetivos de negócio e marketing.</li>
+            <li>Território de marca, tom de voz e mensagens-chave.</li>
+            <li>Seleção estratégica de canais e públicos-alvo.</li>
+            <li>Desenvolvimento do ecossistema de comunicação.</li>
+            <li>Criação do calendário editorial e planeamento de conteúdos.</li>
+          </ul>
+          <div class="step-connector down-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+        </div>
+
+        <div class="method-card" data-step="3">
+          <div class="step-badge">03</div>
+          <div class="method-icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3 class="method-step-title">EXECUTION</h3>
+          <p class="method-subtitle">Implementação & Ativação</p>
+          <ul class="method-checklist">
+            <li>Produção criativa de conteúdos e peças de campanha.</li>
+            <li>Gestão operacional e ativação nos canais digitais.</li>
+            <li>Coordenação e alinhamento multicanal.</li>
+            <li>Acompanhamento diário e gestão do plano de ação.</li>
+          </ul>
+          <div class="step-connector left-arrow"><i class="fa-solid fa-arrow-left"></i></div>
+        </div>
+
+        <div class="method-card" data-step="4">
+          <div class="step-badge">04</div>
+          <div class="method-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3 class="method-step-title">OPTIMISATION</h3>
+          <p class="method-subtitle">Avaliação & Melhoria Contínua</p>
+          <ul class="method-checklist">
+            <li>Monitorização em tempo real de resultados.</li>
+            <li>Análise analítica de dados e tracking de KPIs chave.</li>
+            <li>Identificação de oportunidades e pontos de fricção.</li>
+            <li>Otimização contínua de campanhas e estratégias futuras.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Goal Callout Banner -->
+      <div class="goal-callout">
+        <div class="goal-icon"><i class="fa-solid fa-bullseye"></i></div>
+        <div class="goal-text">
+          <strong>Objetivo Final:</strong> Gerar <span class="text-orange">impacto real</span>, construir marcas fortes e criar <span class="text-orange">valor sustentável</span>.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PYTHON INTERACTIVE LAB ================= -->
+  <section class="python-lab-section" id="python-lab">
+    <div class="container">
+      <div class="lab-card">
+        
+        <div class="lab-header">
+          <div class="lab-badge">
+            <i class="fa-brands fa-python"></i> PYTHON MARKETING LAB
+          </div>
+          <span class="engine-status" id="engine-status">
+            <span class="status-indicator"></span> Motor Python (Pyodide WebAssembly)
+          </span>
+        </div>
+
+        <div class="lab-intro">
+          <h2 class="section-title">Simulador de ROI & Performance de Campanhas</h2>
+          <p class="section-sub">
+            Este módulo executa código <strong>Python real diretamente no seu navegador</strong>. Ajuste as variáveis de orçamento, taxa de cliques (CTR) e conversão para simular o retorno sobre o investimento publicitário (ROAS), Custo de Aquisição (CAC) e lucro projetado.
+          </p>
+        </div>
+
+        <div class="lab-workspace">
+          
+          <!-- Controls Panel -->
+          <div class="lab-controls">
+            <h4 class="controls-title"><i class="fa-solid fa-sliders"></i> Parâmetros da Campanha</h4>
+            
+            <div class="input-group">
+              <label for="input-budget">
+                <span>Orçamento Publicitário (€)</span>
+                <span class="input-val" id="val-budget">1 500 €</span>
+              </label>
+              <input type="range" id="input-budget" min="200" max="15000" step="100" value="1500">
+            </div>
+
+            <div class="input-group">
+              <label for="input-cpc">
+                <span>Custo Médio por Clique - CPC (€)</span>
+                <span class="input-val" id="val-cpc">0.45 €</span>
+              </label>
+              <input type="range" id="input-cpc" min="0.05" max="3.00" step="0.05" value="0.45">
+            </div>
+
+            <div class="input-group">
+              <label for="input-cr">
+                <span>Taxa de Conversão da Landing Page (%)</span>
+                <span class="input-val" id="val-cr">3.2 %</span>
+              </label>
+              <input type="range" id="input-cr" min="0.5" max="12.0" step="0.1" value="3.2">
+            </div>
+
+            <div class="input-group">
+              <label for="input-aov">
+                <span>Valor Médio por Venda / Ticket Médio (€)</span>
+                <span class="input-val" id="val-aov">75.00 €</span>
+              </label>
+              <input type="range" id="input-aov" min="10" max="500" step="5" value="75">
+            </div>
+
+            <div class="control-actions">
+              <button id="run-python-btn" class="btn btn-primary w-100">
+                <i class="fa-solid fa-play"></i> Executar Cálculo em Python
+              </button>
+              <button id="toggle-code-btn" class="btn btn-ghost w-100 mt-2">
+                <i class="fa-solid fa-code"></i> Ver Código Python Fonte
+              </button>
+            </div>
+          </div>
+
+          <!-- Results Panel -->
+          <div class="lab-results">
+            <h4 class="controls-title"><i class="fa-solid fa-chart-column"></i> Previsão & Métricas Geradas</h4>
+
+            <div class="kpi-grid">
+              <div class="kpi-card highlight-card">
+                <span class="kpi-label">ROAS (Retorno s/ Gasto)</span>
+                <span class="kpi-value text-orange" id="kpi-roas">5.33x</span>
+                <span class="kpi-meta">533% de Retorno</span>
+              </div>
+
+              <div class="kpi-card">
+                <span class="kpi-label">Receita Estimada</span>
+                <span class="kpi-value" id="kpi-revenue">8 000 €</span>
+                <span class="kpi-meta">Vendas brutas geradas</span>
+              </div>
+
+              <div class="kpi-card">
+                <span class="kpi-label">CAC (Custo Aquisição)</span>
+                <span class="kpi-value" id="kpi-cac">14.06 €</span>
+                <span class="kpi-meta">Por cliente convertido</span>
+              </div>
+
+              <div class="kpi-card">
+                <span class="kpi-label">Vendas / Clientes</span>
+                <span class="kpi-value" id="kpi-conversions">106</span>
+                <span class="kpi-meta">Conversões estimadas</span>
+              </div>
+
+              <div class="kpi-card">
+                <span class="kpi-label">Cliques Estimados</span>
+                <span class="kpi-value" id="kpi-clicks">3 333</span>
+                <span class="kpi-meta">Tráfego gerado</span>
+              </div>
+
+              <div class="kpi-card">
+                <span class="kpi-label">Lucro Bruto de Campanha</span>
+                <span class="kpi-value text-green" id="kpi-profit">+6 500 €</span>
+                <span class="kpi-meta">Receita menos investimento</span>
+              </div>
+            </div>
+
+            <!-- Terminal Output / Python Console -->
+            <div class="python-console">
+              <div class="console-header">
+                <span class="console-dot dot-red"></span>
+                <span class="console-dot dot-yellow"></span>
+                <span class="console-dot dot-green"></span>
+                <span class="console-title">Python 3.11 Runtime — stdout</span>
+              </div>
+              <pre class="console-body" id="python-output">
+>>> Executing Python Marketing Simulation...
+[OK] Parameters Loaded: Budget=1500€, CPC=0.45€, CR=3.2%, AOV=75€
+[CALC] Clicks = 1,500 / 0.45 = 3,333 clicks
+[CALC] Conversions = 3,333 * 0.032 = 106.6 clients
+[CALC] Revenue = 106.6 * 75€ = 8,000.00€
+[RESULT] ROAS = 5.33x | CAC = 14.06€ | Net Profit = +6,500.00€
+>>> Simulation finished with exit code 0.
+              </pre>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Hidden Code Drawer (revealed on button click) -->
+        <div class="code-drawer" id="code-drawer" style="display: none;">
+          <div class="code-header">
+            <span><i class="fa-brands fa-python"></i> script_marketing_analytics.py</span>
+            <button class="copy-code-btn" id="copy-code-btn"><i class="fa-regular fa-copy"></i> Copiar Código</button>
+          </div>
+          <pre class="code-content"><code>def simulate_marketing_campaign(budget: float, cpc: float, conversion_rate: float, aov: float) -> dict:
+    """
+    Simulador de Campanha de Marketing Digital
+    Desenvolvido por Daniel Marques
+    """
+    # 1. Tráfego gerado a partir do orçamento e custo por clique
+    clicks = int(budget / cpc) if cpc > 0 else 0
+    
+    # 2. Número de conversões baseado na taxa de conversão (CR)
+    conversions = int(clicks * (conversion_rate / 100.0))
+    
+    # 3. Retorno financeiro e métricas-chave
+    revenue = conversions * aov
+    net_profit = revenue - budget
+    roas = (revenue / budget) if budget > 0 else 0.0
+    cac = (budget / conversions) if conversions > 0 else 0.0
+    
+    return {
+        "budget": budget,
+        "clicks": clicks,
+        "conversions": conversions,
+        "revenue": round(revenue, 2),
+        "net_profit": round(net_profit, 2),
+        "roas": round(roas, 2),
+        "cac": round(cac, 2)
+    }</code></pre>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS SECTION ================= -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-heading text-center">
+        <span class="eyebrow-tag">PORTFOLIO CASE STUDIES</span>
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <p class="section-sub">Estratégias reais, planeamento 360°, identidade de marca e gestão de redes sociais.</p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- PROJECT 1: KOENIGSEGG -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-discipline">
+              <span class="badge-discipline"><i class="fa-solid fa-hashtag"></i> Social Media</span>
+              <span class="badge-type">CTeSP Project</span>
+            </div>
+            <h3 class="project-title">KOENIGSEGG — Digital Strategy</h3>
+            <p class="project-concept">
+              <i class="fa-solid fa-quote-left text-orange"></i> 
+              <em>"Designed and Engineered by Dreamers"</em>
+            </p>
+          </div>
+
+          <div class="project-body">
+            <div class="accordion-item active">
+              <div class="accordion-header"><span class="step-num">01</span> Desafio</div>
+              <div class="accordion-content">
+                Identificar uma marca de prestígio com margem de melhoria digital. Embora a Koenigsegg tenha uma posição incontestável no mercado hiperdesportivo, a presença nas redes sociais não refletia totalmente a sua identidade. O desafio foi aproximar a comunicação do que a marca representa através de consistência e distinção.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header"><span class="step-num">02</span> Abordagem</div>
+              <div class="accordion-content">
+                Análise aprofundada da identidade da marca, concorrência direta e comportamento da audiência global. Mapeamento de oportunidades de conteúdos e definição dos territórios de comunicação estratégicos a explorar.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header"><span class="step-num">03</span> Resultados & Entrega</div>
+              <div class="accordion-content">
+                Criação de um novo rumo de comunicação com o conceito <em>"Designed and Engineered by Dreamers"</em>, cobrindo tom de voz adaptado, pilares de conteúdo, grelha visual e calendário editorial com publicações práticas.
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <a href="https://canva.link/9htzv8b2qjcw25u" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Apresentação Completa (Canva)
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: SAOLOTO SURF SCHOOL -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-discipline">
+              <span class="badge-discipline"><i class="fa-solid fa-chess"></i> Strategy</span>
+              <span class="badge-type">CTeSP Project</span>
+            </div>
+            <h3 class="project-title">Saoloto Surf School — GTM</h3>
+            <p class="project-concept">
+              <i class="fa-solid fa-water text-orange"></i>
+              Estratégia Go-To-Market & Ecossistema de Comunicação
+            </p>
+          </div>
+
+          <div class="project-body">
+            <div class="accordion-item active">
+              <div class="accordion-header"><span class="step-num">01</span> Desafio</div>
+              <div class="accordion-content">
+                Desenvolver uma estratégia completa de Go-To-Market (GTM) para uma nova marca, definindo branding, posicionamento e plano de ação integrado através de todos os pontos de contacto ao longo do funil de marketing.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header"><span class="step-num">02</span> Abordagem</div>
+              <div class="accordion-content">
+                Pesquisa exaustiva do mercado nacional e internacional de desportos de ondas (Costa da Caparica), análise de concorrentes, personas de consumidores e contexto cultural para criar diferenciação e fidelização.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header"><span class="step-num">03</span> Resultados & Entrega</div>
+              <div class="accordion-content">
+                Criação integral da Saoloto Surf School: identidade, narrativa de marca, plano de marketing de conteúdo, SEO, estratégias com influenciadores e dashboard de métricas para acompanhamento da implementação.
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <a href="https://docs.google.com/document/d/1nyJL0La-Y9aVfhH8O77bKwNDdBvpBbzNKygbAtj7XVI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">
+              <i class="fa-solid fa-file-lines"></i> Ver Documento / Business Case (GDocs)
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: BRIO. -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-discipline">
+              <span class="badge-discipline"><i class="fa-solid fa-compass-drafting"></i> Strategy</span>
+              <span class="badge-type">Estágio Inovcorp</span>
+            </div>
+            <h3 class="project-title">Brio. — Launch Marketing Plan</h3>
+            <p class="project-concept">
+              <i class="fa-solid fa-building text-orange"></i>
+              Plano de Lançamento & Calendário a 90 Dias
+            </p>
+          </div>
+
+          <div class="project-body">
+            <div class="accordion-item active">
+              <div class="accordion-header"><span class="step-num">01</span> Desafio</div>
+              <div class="accordion-content">
+                Desenvolver o Plano de Marketing para o lançamento da marca Brio., respondendo aos objetivos de reconhecimento de marca, posicionamento digital e geração de leads qualificadas no setor de Construção e Imobiliário.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header"><span class="step-num">02</span> Abordagem</div>
+              <div class="accordion-content">
+                Mapeamento do cenário competitivo direto e indireto no setor de Construção & Remodelação e Imobiliário. Estudo detalhado do perfil demográfico e psicográfico do cliente e jornada de tomada de decisão.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header"><span class="step-num">03</span> Resultados & Entrega</div>
+              <div class="accordion-content">
+                Plano de Marketing com estratégia de posicionamento, marketing mix, seleção criteriosa de canais, plano editorial de conteúdos para 90 dias e sistema de KPIs alinhado com as metas de negócio.
+              </div>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <a href="#contact" class="btn btn-outline btn-block">
+              <i class="fa-solid fa-envelope"></i> Solicitar Detalhes do Projeto
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & FOOTER ================= -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        
+        <div class="contact-header text-center">
+          <span class="eyebrow-tag">VAMOS CONVERSAR?</span>
+          <h2 class="section-title">Entre em Contacto</h2>
+          <p class="section-sub">
+            Tem um projeto ou uma oportunidade na área de Marketing Digital e Estratégia? Fale comigo diretamente:
+          </p>
+        </div>
+
+        <div class="contact-cards-row">
+          
+          <!-- WhatsApp Card -->
+          <a href="https://wa.me/351965711655" target="_blank" rel="noopener noreferrer" class="channel-card">
+            <div class="channel-icon text-green"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="channel-info">
+              <span class="channel-name">WhatsApp / Telefone</span>
+              <span class="channel-val">+351 965 711 655</span>
+            </div>
+            <i class="fa-solid fa-arrow-right channel-arrow"></i>
+          </a>
+
+          <!-- Email Card -->
+          <a href="mailto:danielam.workmail@gmail.com" class="channel-card">
+            <div class="channel-icon text-orange"><i class="fa-solid fa-envelope"></i></div>
+            <div class="channel-info">
+              <span class="channel-name">Email Profissional</span>
+              <span class="channel-val">danielam.workmail@gmail.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-right channel-arrow"></i>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/daniel-amorim-marques-2092b6295/" target="_blank" rel="noopener noreferrer" class="channel-card">
+            <div class="channel-icon" style="color: #0A66C2;"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="channel-info">
+              <span class="channel-name">LinkedIn</span>
+              <span class="channel-val">daniel-amorim-marques</span>
+            </div>
+            <i class="fa-solid fa-arrow-right channel-arrow"></i>
+          </a>
+
+          <!-- CV Card -->
+          <a href="https://canva.link/8r5ul8tiru9cutq" target="_blank" rel="noopener noreferrer" class="channel-card highlight-channel">
+            <div class="channel-icon text-orange"><i class="fa-solid fa-file-pdf"></i></div>
+            <div class="channel-info">
+              <span class="channel-name">Curriculum Vitae</span>
+              <span class="channel-val">Aceder ao CV Completo</span>
+            </div>
+            <i class="fa-solid fa-arrow-right channel-arrow"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Credits -->
+      <div class="site-footer">
+        <p>© 2026 Daniel Marques. Todos os direitos reservados.</p>
+        <p class="footer-sub">Desenvolvido com HTML, CSS, JavaScript e Python WebAssembly • Hospedado no GitHub Pages</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Notification Toast for Copy -->
+  <div id="toast" class="toast">Texto copiado para a área de transferência!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
