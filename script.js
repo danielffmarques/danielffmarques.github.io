@@ -1,4 +1,4 @@
-/**
+﻿/**
  * DANIEL MARQUES - PORTFOLIO 2026
  * Interactive Client-Side Scripts
  */
