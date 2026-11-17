@@ -4,18 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Marques | Digital Marketing & Strategy Portfolio 2026</title>
-  <meta name="description" content="Portfólio de Marketing Digital e Estratégia de Daniel Marques. Estratégia de marca, social media, auditoria de marketing e análise de dados.">
+  <meta name="description" content="Portfólio de Marketing Digital e Estratégia de Daniel Marques. Estratégia de marca, social media, auditoria de marketing e planeamento de campanhas.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <!-- Pyodide for In-Browser Python Execution -->
-  <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js" defer></script>
   
   <link rel="stylesheet" href="style.css">
 </head>
@@ -36,9 +33,7 @@
           <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Percurso</a></li>
           <li><a href="#tools" class="nav-link"><i class="fa-solid fa-screwdriver-wrench"></i> Ferramentas</a></li>
           <li><a href="#methodology" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Metodologia</a></li>
-          <li><a href="#python-lab" class="nav-link"><i class="fa-brands fa-python"></i> Python Lab</a></li>
           <li><a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projetos</a></li>
-          <li><a href="#contact" class="nav-link"><i class="fa-regular fa-paper-plane"></i> Contactos</a></li>
         </ul>
       </nav>
 
@@ -86,11 +81,11 @@
         <a href="#projects" class="btn btn-primary">
           <i class="fa-solid fa-arrow-down"></i> Explorar Projetos
         </a>
-        <a href="#python-lab" class="btn btn-secondary">
-          <i class="fa-brands fa-python"></i> Simulador ROI em Python
+        <a href="#about" class="btn btn-secondary">
+          <i class="fa-regular fa-user"></i> Sobre Mim
         </a>
         <a href="https://canva.link/177j9xht3zhy7vm" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
-          <i class="fa-solid fa-palette"></i> Ver Design no Canva
+          <i class="fa-solid fa-palette"></i> Ver no Canva
         </a>
       </div>
     </div>
@@ -101,13 +96,11 @@
     <div class="container">
       <div class="about-grid">
         
-        <!-- Left: Bio & Contacts Card -->
+        <!-- Left: Bio & Contacts Card (Fiel ao Slide 2 do Canva) -->
         <div class="about-bio-card">
           <div class="about-header">
             <div class="avatar-wrapper">
-              <div class="avatar-circle">
-                <i class="fa-solid fa-user-tie"></i>
-              </div>
+              <img src="daniel_photo.png" alt="Daniel Marques" class="avatar-photo">
             </div>
             <div>
               <span class="eyebrow-tag">ABOUT ME</span>
@@ -119,10 +112,10 @@
             Trato cada marca como um <strong>projeto único</strong>. Desenvolvo a estratégia que molda a sua comunicação e identidade de marca, com um foco claro: estabelecer uma <strong>posição distintiva no mercado</strong>.
           </p>
 
-          <!-- Floating Contact Pill Card -->
+          <!-- Floating Contact Pill Card (como no design do Canva) -->
           <div class="contact-pill-card">
             <div class="contact-pill-header">
-              <i class="fa-solid fa-address-card"></i> CONTACTOS RÁPIDOS
+              <i class="fa-solid fa-address-card"></i> CONTACTOS
             </div>
             <div class="contact-quick-list">
               <a href="tel:+351965711655" class="contact-item">
@@ -148,7 +141,7 @@
           <div class="pillars-header">
             <span class="eyebrow-tag">CORE PILLARS</span>
             <h3 class="pillars-title">Áreas de Especialização</h3>
-            <p class="pillars-sub">Clique em cada pilar para ver o foco de atuação:</p>
+            <p class="pillars-sub">Pilares estratégicos de atuação:</p>
           </div>
 
           <div class="pillars-grid">
@@ -176,7 +169,7 @@
             <div class="pillar-card" data-pillar="audit">
               <div class="pillar-icon"><i class="fa-solid fa-chart-pie"></i></div>
               <h4 class="pillar-name">MARKETING AUDIT</h4>
-              <p class="pillar-desc">Diagnóstico de presença digital, análise de concorrentes, funil de conversão e métricas.</p>
+              <p class="pillar-desc">Diagnóstico de presença digital, análise de concorrência, funil de conversão e métricas.</p>
               <span class="pillar-tag">Otimização</span>
             </div>
           </div>
@@ -271,7 +264,7 @@
       <div class="section-heading text-center">
         <span class="eyebrow-tag">TECH STACK & SKILLS</span>
         <h2 class="section-title">Ferramentas & Tecnologias</h2>
-        <p class="section-sub">O ecossistema digital utilizado para análise de dados, automação, publicidade e criação de conteúdo.</p>
+        <p class="section-sub">O ecossistema digital utilizado para análise de dados, métricas, publicidade e criação de conteúdo.</p>
       </div>
 
       <!-- Category Filter Pills -->
@@ -332,11 +325,6 @@
           <i class="fa-solid fa-note-sticky tool-icon" style="color: #111;"></i>
           <span class="tool-name">Notion</span>
           <span class="tool-tag">Gestão & Calendário</span>
-        </div>
-        <div class="tool-card" data-category="analytics">
-          <i class="fa-brands fa-python tool-icon" style="color: #3776AB;"></i>
-          <span class="tool-name">Python & Data</span>
-          <span class="tool-tag">Automação & ROI</span>
         </div>
       </div>
     </div>
@@ -419,178 +407,6 @@
         <div class="goal-text">
           <strong>Objetivo Final:</strong> Gerar <span class="text-orange">impacto real</span>, construir marcas fortes e criar <span class="text-orange">valor sustentável</span>.
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= PYTHON INTERACTIVE LAB ================= -->
-  <section class="python-lab-section" id="python-lab">
-    <div class="container">
-      <div class="lab-card">
-        
-        <div class="lab-header">
-          <div class="lab-badge">
-            <i class="fa-brands fa-python"></i> PYTHON MARKETING LAB
-          </div>
-          <span class="engine-status" id="engine-status">
-            <span class="status-indicator"></span> Motor Python (Pyodide WebAssembly)
-          </span>
-        </div>
-
-        <div class="lab-intro">
-          <h2 class="section-title">Simulador de ROI & Performance de Campanhas</h2>
-          <p class="section-sub">
-            Este módulo executa código <strong>Python real diretamente no seu navegador</strong>. Ajuste as variáveis de orçamento, taxa de cliques (CTR) e conversão para simular o retorno sobre o investimento publicitário (ROAS), Custo de Aquisição (CAC) e lucro projetado.
-          </p>
-        </div>
-
-        <div class="lab-workspace">
-          
-          <!-- Controls Panel -->
-          <div class="lab-controls">
-            <h4 class="controls-title"><i class="fa-solid fa-sliders"></i> Parâmetros da Campanha</h4>
-            
-            <div class="input-group">
-              <label for="input-budget">
-                <span>Orçamento Publicitário (€)</span>
-                <span class="input-val" id="val-budget">1 500 €</span>
-              </label>
-              <input type="range" id="input-budget" min="200" max="15000" step="100" value="1500">
-            </div>
-
-            <div class="input-group">
-              <label for="input-cpc">
-                <span>Custo Médio por Clique - CPC (€)</span>
-                <span class="input-val" id="val-cpc">0.45 €</span>
-              </label>
-              <input type="range" id="input-cpc" min="0.05" max="3.00" step="0.05" value="0.45">
-            </div>
-
-            <div class="input-group">
-              <label for="input-cr">
-                <span>Taxa de Conversão da Landing Page (%)</span>
-                <span class="input-val" id="val-cr">3.2 %</span>
-              </label>
-              <input type="range" id="input-cr" min="0.5" max="12.0" step="0.1" value="3.2">
-            </div>
-
-            <div class="input-group">
-              <label for="input-aov">
-                <span>Valor Médio por Venda / Ticket Médio (€)</span>
-                <span class="input-val" id="val-aov">75.00 €</span>
-              </label>
-              <input type="range" id="input-aov" min="10" max="500" step="5" value="75">
-            </div>
-
-            <div class="control-actions">
-              <button id="run-python-btn" class="btn btn-primary w-100">
-                <i class="fa-solid fa-play"></i> Executar Cálculo em Python
-              </button>
-              <button id="toggle-code-btn" class="btn btn-ghost w-100 mt-2">
-                <i class="fa-solid fa-code"></i> Ver Código Python Fonte
-              </button>
-            </div>
-          </div>
-
-          <!-- Results Panel -->
-          <div class="lab-results">
-            <h4 class="controls-title"><i class="fa-solid fa-chart-column"></i> Previsão & Métricas Geradas</h4>
-
-            <div class="kpi-grid">
-              <div class="kpi-card highlight-card">
-                <span class="kpi-label">ROAS (Retorno s/ Gasto)</span>
-                <span class="kpi-value text-orange" id="kpi-roas">5.33x</span>
-                <span class="kpi-meta">533% de Retorno</span>
-              </div>
-
-              <div class="kpi-card">
-                <span class="kpi-label">Receita Estimada</span>
-                <span class="kpi-value" id="kpi-revenue">8 000 €</span>
-                <span class="kpi-meta">Vendas brutas geradas</span>
-              </div>
-
-              <div class="kpi-card">
-                <span class="kpi-label">CAC (Custo Aquisição)</span>
-                <span class="kpi-value" id="kpi-cac">14.06 €</span>
-                <span class="kpi-meta">Por cliente convertido</span>
-              </div>
-
-              <div class="kpi-card">
-                <span class="kpi-label">Vendas / Clientes</span>
-                <span class="kpi-value" id="kpi-conversions">106</span>
-                <span class="kpi-meta">Conversões estimadas</span>
-              </div>
-
-              <div class="kpi-card">
-                <span class="kpi-label">Cliques Estimados</span>
-                <span class="kpi-value" id="kpi-clicks">3 333</span>
-                <span class="kpi-meta">Tráfego gerado</span>
-              </div>
-
-              <div class="kpi-card">
-                <span class="kpi-label">Lucro Bruto de Campanha</span>
-                <span class="kpi-value text-green" id="kpi-profit">+6 500 €</span>
-                <span class="kpi-meta">Receita menos investimento</span>
-              </div>
-            </div>
-
-            <!-- Terminal Output / Python Console -->
-            <div class="python-console">
-              <div class="console-header">
-                <span class="console-dot dot-red"></span>
-                <span class="console-dot dot-yellow"></span>
-                <span class="console-dot dot-green"></span>
-                <span class="console-title">Python 3.11 Runtime — stdout</span>
-              </div>
-              <pre class="console-body" id="python-output">
->>> Executing Python Marketing Simulation...
-[OK] Parameters Loaded: Budget=1500€, CPC=0.45€, CR=3.2%, AOV=75€
-[CALC] Clicks = 1,500 / 0.45 = 3,333 clicks
-[CALC] Conversions = 3,333 * 0.032 = 106.6 clients
-[CALC] Revenue = 106.6 * 75€ = 8,000.00€
-[RESULT] ROAS = 5.33x | CAC = 14.06€ | Net Profit = +6,500.00€
->>> Simulation finished with exit code 0.
-              </pre>
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- Hidden Code Drawer (revealed on button click) -->
-        <div class="code-drawer" id="code-drawer" style="display: none;">
-          <div class="code-header">
-            <span><i class="fa-brands fa-python"></i> script_marketing_analytics.py</span>
-            <button class="copy-code-btn" id="copy-code-btn"><i class="fa-regular fa-copy"></i> Copiar Código</button>
-          </div>
-          <pre class="code-content"><code>def simulate_marketing_campaign(budget: float, cpc: float, conversion_rate: float, aov: float) -> dict:
-    """
-    Simulador de Campanha de Marketing Digital
-    Desenvolvido por Daniel Marques
-    """
-    # 1. Tráfego gerado a partir do orçamento e custo por clique
-    clicks = int(budget / cpc) if cpc > 0 else 0
-    
-    # 2. Número de conversões baseado na taxa de conversão (CR)
-    conversions = int(clicks * (conversion_rate / 100.0))
-    
-    # 3. Retorno financeiro e métricas-chave
-    revenue = conversions * aov
-    net_profit = revenue - budget
-    roas = (revenue / budget) if budget > 0 else 0.0
-    cac = (budget / conversions) if conversions > 0 else 0.0
-    
-    return {
-        "budget": budget,
-        "clicks": clicks,
-        "conversions": conversions,
-        "revenue": round(revenue, 2),
-        "net_profit": round(net_profit, 2),
-        "roas": round(roas, 2),
-        "cac": round(cac, 2)
-    }</code></pre>
-        </div>
-
       </div>
     </div>
   </section>
@@ -732,8 +548,8 @@
           </div>
 
           <div class="project-footer">
-            <a href="#contact" class="btn btn-outline btn-block">
-              <i class="fa-solid fa-envelope"></i> Solicitar Detalhes do Projeto
+            <a href="mailto:danielam.workmail@gmail.com" class="btn btn-outline btn-block">
+              <i class="fa-solid fa-envelope"></i> Contactar sobre este Projeto
             </a>
           </div>
         </article>
@@ -742,72 +558,19 @@
     </div>
   </section>
 
-  <!-- ================= CONTACT & FOOTER ================= -->
-  <section class="contact-section" id="contact">
+  <!-- ================= CLEAN FOOTER ================= -->
+  <footer class="site-footer">
     <div class="container">
-      <div class="contact-box">
-        
-        <div class="contact-header text-center">
-          <span class="eyebrow-tag">VAMOS CONVERSAR?</span>
-          <h2 class="section-title">Entre em Contacto</h2>
-          <p class="section-sub">
-            Tem um projeto ou uma oportunidade na área de Marketing Digital e Estratégia? Fale comigo diretamente:
-          </p>
-        </div>
-
-        <div class="contact-cards-row">
-          
-          <!-- WhatsApp Card -->
-          <a href="https://wa.me/351965711655" target="_blank" rel="noopener noreferrer" class="channel-card">
-            <div class="channel-icon text-green"><i class="fa-brands fa-whatsapp"></i></div>
-            <div class="channel-info">
-              <span class="channel-name">WhatsApp / Telefone</span>
-              <span class="channel-val">+351 965 711 655</span>
-            </div>
-            <i class="fa-solid fa-arrow-right channel-arrow"></i>
-          </a>
-
-          <!-- Email Card -->
-          <a href="mailto:danielam.workmail@gmail.com" class="channel-card">
-            <div class="channel-icon text-orange"><i class="fa-solid fa-envelope"></i></div>
-            <div class="channel-info">
-              <span class="channel-name">Email Profissional</span>
-              <span class="channel-val">danielam.workmail@gmail.com</span>
-            </div>
-            <i class="fa-solid fa-arrow-right channel-arrow"></i>
-          </a>
-
-          <!-- LinkedIn Card -->
-          <a href="https://www.linkedin.com/in/daniel-amorim-marques-2092b6295/" target="_blank" rel="noopener noreferrer" class="channel-card">
-            <div class="channel-icon" style="color: #0A66C2;"><i class="fa-brands fa-linkedin"></i></div>
-            <div class="channel-info">
-              <span class="channel-name">LinkedIn</span>
-              <span class="channel-val">daniel-amorim-marques</span>
-            </div>
-            <i class="fa-solid fa-arrow-right channel-arrow"></i>
-          </a>
-
-          <!-- CV Card -->
-          <a href="https://canva.link/8r5ul8tiru9cutq" target="_blank" rel="noopener noreferrer" class="channel-card highlight-channel">
-            <div class="channel-icon text-orange"><i class="fa-solid fa-file-pdf"></i></div>
-            <div class="channel-info">
-              <span class="channel-name">Curriculum Vitae</span>
-              <span class="channel-val">Aceder ao CV Completo</span>
-            </div>
-            <i class="fa-solid fa-arrow-right channel-arrow"></i>
-          </a>
-
-        </div>
-
+      <div class="footer-links-row">
+        <a href="tel:+351965711655"><i class="fa-solid fa-phone"></i> +351 965 711 655</a>
+        <a href="mailto:danielam.workmail@gmail.com"><i class="fa-solid fa-envelope"></i> danielam.workmail@gmail.com</a>
+        <a href="https://www.linkedin.com/in/daniel-amorim-marques-2092b6295/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="https://canva.link/8r5ul8tiru9cutq" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Curriculum Vitae</a>
       </div>
-
-      <!-- Bottom Credits -->
-      <div class="site-footer">
-        <p>© 2026 Daniel Marques. Todos os direitos reservados.</p>
-        <p class="footer-sub">Desenvolvido com HTML, CSS, JavaScript e Python WebAssembly • Hospedado no GitHub Pages</p>
-      </div>
+      <p class="footer-copy">© 2026 Daniel Marques. Todos os direitos reservados.</p>
+      <p class="footer-sub">Digital Marketing & Strategy Portfolio • Lisboa, Portugal</p>
     </div>
-  </section>
+  </footer>
 
   <!-- Notification Toast for Copy -->
   <div id="toast" class="toast">Texto copiado para a área de transferência!</div>
