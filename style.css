@@ -405,194 +405,325 @@ a {
 }
 
 /* ==========================================================================
-   ABOUT & 4 PILLARS
+   ABOUT & SPECIALIZATION STAGE (DYNAMIC 4-CARD FAN-OUT + SCROLL BIO)
    ========================================================================== */
 .about-section {
-  padding: 100px 0;
+  padding: 100px 0 110px 0;
   background: var(--bg-alt);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 48px;
-  align-items: center;
-}
-
-.about-bio-card {
-  background: var(--bg-surface);
-  padding: 40px;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-sm);
-}
-
-.about-header {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  margin-bottom: 28px;
-}
-
-.avatar-wrapper {
   position: relative;
-  flex-shrink: 0;
+  overflow: hidden;
 }
 
-.avatar-photo {
-  width: 175px;
-  height: 175px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center 15%;
-  border: 4px solid var(--border-dark);
-  box-shadow: 6px 6px 0px var(--primary);
-  display: block;
-  background-color: var(--bg-alt);
-  transition: var(--transition);
-}
-
-.avatar-photo:hover {
-  transform: scale(1.03);
-  box-shadow: 8px 8px 0px var(--primary);
-}
-
-.about-header-text {
-  flex-grow: 1;
-}
-
-.bio-text {
-  font-size: 1.15rem;
-  color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 32px;
-}
-
-.contact-pill-card {
-  background: var(--bg-blush);
-  border: 1.5px dashed var(--primary);
-  border-radius: var(--radius-md);
-  padding: 20px;
-}
-
-.contact-pill-header {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: var(--primary);
-  margin-bottom: 12px;
+.specialization-stage {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 6px;
+  gap: 16px;
+  position: relative;
+  min-height: 380px;
+  max-width: 1280px;
+  margin: 36px auto 50px auto;
+  perspective: 1200px;
 }
 
-.contact-quick-list {
+/* Center Portrait Card */
+.stage-center-portrait {
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.contact-item {
-  display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--text-main);
-  background: var(--bg-surface);
-  padding: 10px 14px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-color);
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.contact-item:hover {
+.portrait-card-frame {
+  width: 220px;
+  height: 290px;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid var(--border-dark);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12), 6px 6px 0px var(--primary);
+  background: var(--bg-surface);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+[data-theme="dark"] .portrait-card-frame {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.4), 6px 6px 0px var(--primary);
+}
+
+.portrait-card-frame:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 24px 55px rgba(255, 84, 0, 0.25), 8px 8px 0px var(--primary);
+}
+
+.stage-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  display: block;
+}
+
+.portrait-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(14, 15, 18, 0.88);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  padding: 5px 12px;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.portrait-badge .pulse-dot {
+  width: 7px;
+  height: 7px;
+  background: #22C55E;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  animation: pulseGreen 2s infinite;
+}
+
+/* Wings (Left & Right) */
+.stage-wing {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  z-index: 5;
+}
+
+.stage-wing-left {
+  justify-content: flex-end;
+}
+
+.stage-wing-right {
+  justify-content: flex-start;
+}
+
+/* Individual Specialization Card */
+.spec-card {
+  width: 215px;
+  min-height: 290px;
+  background: var(--bg-surface);
+  border: 2px solid var(--border-dark);
+  border-radius: 20px;
+  box-shadow: 4px 4px 0px var(--border-dark);
+  padding: 22px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  will-change: transform, opacity;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+[data-theme="dark"] .spec-card {
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 4px 4px 0px rgba(255, 84, 0, 0.25);
+}
+
+.spec-card:hover {
+  transform: translateY(-8px) scale(1.03) !important;
   border-color: var(--primary);
+  box-shadow: 8px 8px 0px var(--primary) !important;
+}
+
+.spec-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.spec-num {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
   color: var(--primary);
 }
 
-.copy-icon, .external-icon {
-  margin-left: auto;
-  font-size: 0.85rem;
-  color: var(--text-light);
-}
-
-/* 4 Pillars Neo-Brutalist Grid */
-.pillars-header {
-  margin-bottom: 24px;
-}
-
-.pillars-title {
-  font-family: var(--font-display);
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-
-.pillars-sub {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-}
-
-.pillars-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.pillar-card {
-  background: var(--bg-surface);
-  border: 2px solid var(--border-dark);
-  box-shadow: var(--shadow-brutal);
-  padding: 24px;
-  border-radius: var(--radius-md);
-  transition: var(--transition);
-  position: relative;
-}
-
-.pillar-card:hover, .pillar-card.active {
-  transform: translate(-3px, -3px);
-  box-shadow: 6px 6px 0px var(--primary);
-  border-color: var(--border-dark);
-}
-
-.pillar-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: var(--radius-sm);
+.spec-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
   background: var(--primary-light);
   color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
-  margin-bottom: 16px;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
 }
 
-.pillar-name {
+.spec-card:hover .spec-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.spec-title {
   font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-main);
   margin-bottom: 8px;
+  letter-spacing: -0.01em;
 }
 
-.pillar-desc {
-  font-size: 0.85rem;
+.spec-desc {
+  font-size: 0.82rem;
   color: var(--text-muted);
   line-height: 1.5;
   margin-bottom: 14px;
 }
 
-.pillar-tag {
-  display: inline-block;
-  font-size: 0.75rem;
+.spec-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
   font-weight: 700;
   color: var(--primary);
   background: var(--primary-light);
-  padding: 3px 8px;
-  border-radius: var(--radius-pill);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  width: fit-content;
+}
+
+/* ==========================================================================
+   FAN-OUT ANIMATION MECHANICS
+   ========================================================================== */
+/* Left Wing: Cards originate from behind portrait */
+.stage-wing-left .card-left-1 {
+  transform: translateX(250px) scale(0.65) rotate(6deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.12s, opacity 0.5s ease 0.12s, box-shadow 0.3s ease;
+}
+
+.stage-wing-left .card-left-2 {
+  transform: translateX(130px) scale(0.75) rotate(3deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.04s, opacity 0.5s ease 0.04s, box-shadow 0.3s ease;
+}
+
+/* Right Wing: Cards originate from behind portrait */
+.stage-wing-right .card-right-1 {
+  transform: translateX(-130px) scale(0.75) rotate(-3deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.04s, opacity 0.5s ease 0.04s, box-shadow 0.3s ease;
+}
+
+.stage-wing-right .card-right-2 {
+  transform: translateX(-250px) scale(0.65) rotate(-6deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.12s, opacity 0.5s ease 0.12s, box-shadow 0.3s ease;
+}
+
+/* When fanned out: smooth snap to open positions */
+.specialization-stage.fanned-out .stage-wing-left .spec-card,
+.specialization-stage.fanned-out .stage-wing-right .spec-card {
+  transform: translateX(0) scale(1) rotate(0deg);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ==========================================================================
+   SCROLL-REVEALED BIO (UNDER PHOTO)
+   ========================================================================== */
+.about-scroll-bio {
+  max-width: 820px;
+  margin: 30px auto 0 auto;
+  opacity: 0;
+  transform: translateY(45px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.about-scroll-bio.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-bio-card {
+  background: var(--bg-surface);
+  border: 2px solid var(--border-dark);
+  box-shadow: var(--shadow-brutal);
+  border-radius: var(--radius-lg);
+  padding: 38px 46px;
+  text-align: center;
+}
+
+[data-theme="dark"] .scroll-bio-card {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.bio-intro-badge {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bio-main-text {
+  font-size: 1.12rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 28px auto;
+}
+
+.bio-contacts-bar {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.bio-contact-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border-color);
+  padding: 10px 18px;
+  border-radius: 9999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.bio-contact-pill:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.copy-icon, .external-icon {
+  font-size: 0.82rem;
+  color: var(--text-light);
 }
 
 /* ==========================================================================
@@ -1215,6 +1346,34 @@ a {
 /* ==========================================================================
    RESPONSIVE DESIGN (MOBILE & TABLETS)
    ========================================================================== */
+@media (max-width: 1180px) {
+  .specialization-stage {
+    flex-direction: column;
+    gap: 32px;
+    min-height: auto;
+  }
+  
+  .stage-wing {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .stage-wing-left .card-left-1,
+  .stage-wing-left .card-left-2,
+  .stage-wing-right .card-right-1,
+  .stage-wing-right .card-right-2 {
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease !important;
+  }
+  
+  .spec-card {
+    width: 260px;
+  }
+}
+
 @media (max-width: 992px) {
   .about-grid,
   .methodology-grid {

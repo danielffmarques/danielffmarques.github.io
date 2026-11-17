@@ -66,89 +66,117 @@
     </div>
   </section>
 
-  <!-- ================= ABOUT & CORE PILLARS ================= -->
+  <!-- ================= ABOUT & SPECIALIZATION STAGE ================= -->
   <section class="about-section" id="about">
     <div class="container">
-      <div class="about-grid">
+
+      <!-- Section Eyebrow & Title -->
+      <div class="section-heading text-center mb-6">
+        <span class="section-eyebrow text-orange">/ SOBRE MIM</span>
+        <h2 class="section-title">Áreas de Especialização</h2>
+        <p class="section-sub">Pilares estratégicos de atuação no ecossistema digital.</p>
+      </div>
+
+      <!-- Interactive 5-Piece Stage: Center Photo + 2 Cards Left + 2 Cards Right -->
+      <div class="specialization-stage" id="specializationStage">
         
-        <!-- Left: Bio & Contacts Card -->
-        <div class="about-bio-card">
-          <div class="about-header">
-            <div class="avatar-wrapper">
-              <img src="daniel_photo.jpg" alt="Daniel Marques" class="avatar-photo">
+        <!-- 2 Cards Left -->
+        <div class="stage-wing stage-wing-left">
+          
+          <!-- Card 1: Strategy (Far Left) -->
+          <article class="spec-card card-left-1" data-pillar="strategy">
+            <div class="spec-card-top">
+              <span class="spec-num">01</span>
+              <div class="spec-icon"><i class="fa-solid fa-chess"></i></div>
             </div>
-            <div class="about-header-text">
-              <h2 class="section-title">Olá, o meu nome é <span class="text-orange">DANIEL.</span></h2>
-            </div>
-          </div>
+            <h3 class="spec-title">STRATEGY</h3>
+            <p class="spec-desc">Go-To-Market, posicionamento de marca, 4 C's e planos de comunicação estruturados.</p>
+            <div class="spec-tag"><i class="fa-solid fa-compass"></i> Planeamento 360°</div>
+          </article>
 
-          <p class="bio-text">
-            Trato cada marca como um <strong>projeto único</strong>. Desenvolvo a estratégia que molda a sua comunicação e identidade de marca, com um foco claro: estabelecer uma <strong>posição distintiva no mercado</strong>.
-          </p>
-
-          <!-- Floating Contact Pill Card -->
-          <div class="contact-pill-card">
-            <div class="contact-pill-header">
-              <i class="fa-solid fa-address-card"></i> CONTACTOS
+          <!-- Card 2: Branding (Near Left) -->
+          <article class="spec-card card-left-2" data-pillar="branding">
+            <div class="spec-card-top">
+              <span class="spec-num">02</span>
+              <div class="spec-icon"><i class="fa-solid fa-fingerprint"></i></div>
             </div>
-            <div class="contact-quick-list">
-              <a href="tel:+351965711655" class="contact-item">
-                <i class="fa-solid fa-phone"></i>
-                <span>+351 965 711 655</span>
-              </a>
-              <button class="contact-item copy-btn" data-copy="danielam.workmail@gmail.com" title="Clique para copiar">
-                <i class="fa-solid fa-envelope"></i>
-                <span>danielam.workmail@gmail.com</span>
-                <i class="fa-regular fa-copy copy-icon"></i>
-              </button>
-              <a href="https://www.linkedin.com/in/daniel-amorim-marques-2092b6295/" target="_blank" rel="noopener noreferrer" class="contact-item">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>daniel-amorim-marques</span>
-                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
-              </a>
+            <h3 class="spec-title">BRANDING</h3>
+            <p class="spec-desc">Construção de território de marca, tom de voz, identidade verbal e narrativa distintiva.</p>
+            <div class="spec-tag"><i class="fa-solid fa-star"></i> Diferenciação</div>
+          </article>
+
+        </div>
+
+        <!-- Center: Daniel's Portrait Card -->
+        <div class="stage-center-portrait" id="stageCenterPortrait">
+          <div class="portrait-card-frame">
+            <img src="daniel_photo.jpg" alt="Daniel Marques" class="stage-portrait-img">
+            <div class="portrait-badge">
+              <span class="pulse-dot"></span>
+              <span class="portrait-name">Daniel Marques</span>
             </div>
           </div>
         </div>
 
-        <!-- Right: 4 Neo-Brutalist Core Pillars -->
-        <div class="pillars-container">
-          <div class="pillars-header">
-            <h3 class="pillars-title">Áreas de Especialização</h3>
-            <p class="pillars-sub">Pilares estratégicos de atuação:</p>
-          </div>
-
-          <div class="pillars-grid">
-            <div class="pillar-card active" data-pillar="strategy">
-              <div class="pillar-icon"><i class="fa-solid fa-chess"></i></div>
-              <h4 class="pillar-name">STRATEGY</h4>
-              <p class="pillar-desc">Go-To-Market, posicionamento de marca, 4 C's e planos de comunicação estruturados.</p>
-              <span class="pillar-tag">Planeamento 360°</span>
+        <!-- 2 Cards Right -->
+        <div class="stage-wing stage-wing-right">
+          
+          <!-- Card 3: Social Media (Near Right) -->
+          <article class="spec-card card-right-1" data-pillar="social">
+            <div class="spec-card-top">
+              <span class="spec-num">03</span>
+              <div class="spec-icon"><i class="fa-solid fa-hashtag"></i></div>
             </div>
+            <h3 class="spec-title">SOCIAL MEDIA</h3>
+            <p class="spec-desc">Gestão de canais, calendários editoriais, community management ativo e campanhas.</p>
+            <div class="spec-tag"><i class="fa-solid fa-users"></i> Engajamento</div>
+          </article>
 
-            <div class="pillar-card" data-pillar="branding">
-              <div class="pillar-icon"><i class="fa-solid fa-fingerprint"></i></div>
-              <h4 class="pillar-name">BRANDING</h4>
-              <p class="pillar-desc">Construção de território de marca, tom de voz, identidade verbal e visual.</p>
-              <span class="pillar-tag">Diferenciação</span>
+          <!-- Card 4: Marketing Audit (Far Right) -->
+          <article class="spec-card card-right-2" data-pillar="audit">
+            <div class="spec-card-top">
+              <span class="spec-num">04</span>
+              <div class="spec-icon"><i class="fa-solid fa-chart-pie"></i></div>
             </div>
+            <h3 class="spec-title">MARKETING AUDIT</h3>
+            <p class="spec-desc">Diagnóstico de presença digital, análise de concorrência, funil de conversão e métricas.</p>
+            <div class="spec-tag"><i class="fa-solid fa-chart-line"></i> Otimização</div>
+          </article>
 
-            <div class="pillar-card" data-pillar="social">
-              <div class="pillar-icon"><i class="fa-solid fa-hashtag"></i></div>
-              <h4 class="pillar-name">SOCIAL MEDIA</h4>
-              <p class="pillar-desc">Gestão de canais, calendários editoriais, community management e campanhas.</p>
-              <span class="pillar-tag">Engajamento</span>
-            </div>
-
-            <div class="pillar-card" data-pillar="audit">
-              <div class="pillar-icon"><i class="fa-solid fa-chart-pie"></i></div>
-              <h4 class="pillar-name">MARKETING AUDIT</h4>
-              <p class="pillar-desc">Diagnóstico de presença digital, análise de concorrência, funil de conversão e métricas.</p>
-              <span class="pillar-tag">Otimização</span>
-            </div>
-          </div>
         </div>
 
       </div>
+
+      <!-- Scroll-revealed Bio & Contacts below the photo -->
+      <div class="about-scroll-bio" id="aboutScrollBio">
+        <div class="scroll-bio-card">
+          <div class="bio-intro-badge">
+            <span class="wave-icon">👋</span> Olá, o meu nome é <strong class="text-orange">DANIEL.</strong>
+          </div>
+          <p class="bio-main-text">
+            Trato cada marca como um <strong>projeto único</strong>. Desenvolvo a estratégia que molda a sua comunicação e identidade de marca, com um foco claro: estabelecer uma <strong>posição distintiva no mercado</strong> e gerar resultados mensuráveis.
+          </p>
+
+          <!-- Floating Contact Pills -->
+          <div class="bio-contacts-bar">
+            <a href="tel:+351965711655" class="bio-contact-pill">
+              <i class="fa-solid fa-phone"></i>
+              <span>+351 965 711 655</span>
+            </a>
+            <button class="bio-contact-pill copy-btn" data-copy="danielam.workmail@gmail.com" title="Copiar email">
+              <i class="fa-solid fa-envelope"></i>
+              <span>danielam.workmail@gmail.com</span>
+              <i class="fa-regular fa-copy copy-icon"></i>
+            </button>
+            <a href="https://www.linkedin.com/in/daniel-amorim-marques-2092b6295/" target="_blank" rel="noopener noreferrer" class="bio-contact-pill">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>daniel-amorim-marques</span>
+              <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 

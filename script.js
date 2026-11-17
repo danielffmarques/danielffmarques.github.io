@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initToolsFilter();
   initMethodologySteps();
   initProjectAccordions();
+  initSpecializationStage();
 });
 
 /* ==========================================================================
@@ -188,3 +189,49 @@ function initProjectAccordions() {
     });
   });
 }
+
+/* ==========================================================================
+   7. INTERACTIVE SPECIALIZATION STAGE & SCROLL BIO REVEAL
+   ========================================================================== */
+function initSpecializationStage() {
+  const stage = document.getElementById('specializationStage');
+  const scrollBio = document.getElementById('aboutScrollBio');
+
+  if (!stage) return;
+
+  // IntersectionObserver to trigger fan-out after portrait is viewed
+  const stageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Optimal delay (~450ms) so user registers portrait before cards fan out
+        setTimeout(() => {
+          stage.classList.add('fanned-out');
+        }, 450);
+        observer.unobserve(stage);
+      }
+    });
+  }, {
+    threshold: 0.25,
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  stageObserver.observe(stage);
+
+  // IntersectionObserver to reveal bio text when scrolling slightly down
+  if (scrollBio) {
+    const bioObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          scrollBio.classList.add('revealed');
+          observer.unobserve(scrollBio);
+        }
+      });
+    }, {
+      threshold: 0.2,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    bioObserver.observe(scrollBio);
+  }
+}
+
