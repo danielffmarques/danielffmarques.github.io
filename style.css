@@ -756,13 +756,14 @@ a {
 }
 
 /* ==========================================================================
-   SCROLL-REVEALED BIO (UNDER PHOTO)
+   SCROLL-REVEALED BIO (UNDER PHOTO, CLEAN EDITORIAL TYPOGRAPHY)
    ========================================================================== */
 .about-scroll-bio {
-  max-width: 820px;
-  margin: 30px auto 0 auto;
+  max-width: 780px;
+  margin: 54px auto 10px auto;
+  text-align: center;
   opacity: 0;
-  transform: translateY(45px);
+  transform: translateY(35px);
   transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
@@ -772,71 +773,21 @@ a {
   transform: translateY(0);
 }
 
-.scroll-bio-card {
-  background: var(--bg-surface);
-  border: 2px solid var(--border-dark);
-  box-shadow: var(--shadow-brutal);
-  border-radius: var(--radius-lg);
-  padding: 38px 46px;
-  text-align: center;
-}
-
-[data-theme="dark"] .scroll-bio-card {
-  border-color: rgba(255, 255, 255, 0.15);
-}
-
-.bio-intro-badge {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
+.bio-intro-title {
+  font-family: var(--font-sans);
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
   font-weight: 800;
   color: var(--text-main);
-  margin-bottom: 14px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  margin-bottom: 16px;
+  letter-spacing: -0.015em;
 }
 
 .bio-main-text {
-  font-size: 1.12rem;
+  font-size: clamp(1.05rem, 1.8vw, 1.18rem);
   color: var(--text-muted);
-  line-height: 1.7;
-  max-width: 700px;
-  margin: 0 auto 28px auto;
-}
-
-.bio-contacts-bar {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.bio-contact-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--bg-alt);
-  border: 1px solid var(--border-color);
-  padding: 10px 18px;
-  border-radius: 9999px;
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--text-main);
-  cursor: pointer;
-  transition: var(--transition);
-  text-decoration: none;
-}
-
-.bio-contact-pill:hover {
-  border-color: var(--primary);
-  color: var(--primary);
-  background: var(--primary-light);
-  transform: translateY(-2px);
-}
-
-.copy-icon, .external-icon {
-  font-size: 0.82rem;
-  color: var(--text-light);
+  line-height: 1.75;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 /* ==========================================================================
