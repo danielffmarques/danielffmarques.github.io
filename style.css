@@ -479,6 +479,43 @@ a {
   color: var(--text-main);
 }
 
+/* Giant Display Name (Dymas Alfin Style: Outline + Solid) */
+.hero-giant-name {
+  font-family: var(--font-sans);
+  font-size: clamp(2.8rem, 6.8vw, 5.8rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 36px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  user-select: none;
+}
+
+.name-outline {
+  color: transparent;
+  -webkit-text-stroke: 2.5px var(--text-main);
+  transition: var(--transition);
+}
+
+.name-solid {
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+[data-theme="dark"] .name-outline {
+  color: transparent;
+  -webkit-text-stroke: 2.5px #FFFFFF;
+}
+
+[data-theme="dark"] .name-solid {
+  color: #FFFFFF;
+}
+
+
 .hero-scroll-indicator {
   position: absolute;
   bottom: 24px;
