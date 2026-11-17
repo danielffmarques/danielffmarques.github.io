@@ -2,8 +2,7 @@
 
 Website interativo de portfólio profissional de **Daniel Marques**, focado em **Marketing Digital, Estratégia de Marca, Social Media e Análise de Performance**.
 
-🌐 **Link do Portfólio no GitHub Pages:** [https://danielffmarques.github.io/](https://danielffmarques.github.io/)  
-🎨 **Design Original no Canva:** [Ver no Canva](https://canva.link/u9bgadgb4ukve4w)
+🌐 **Link do Portfólio no GitHub Pages:** [https://danielffmarques.github.io/](https://danielffmarques.github.io/)
 
 ---
 
