@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Marques | Digital Marketing & Strategy (Versão 2)</title>
-  <meta name="description" content="Portfólio de Marketing Digital e Estratégia de Daniel Marques — Edição Editorial Inspirada em Dribbble.">
+  <meta name="description" content="Portfólio de Marketing Digital e Estratégia de Daniel Marques — Versão 2 Full Width Dribbble Style.">
 
-  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans & Syne -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
@@ -16,406 +16,464 @@
 
   <link rel="stylesheet" href="style-v2.css">
 </head>
-<body class="v2-body">
+<body class="v2-fullwidth-body">
 
-  <!-- Floating Version Switcher (para comparar facilmente as duas versões) -->
+  <!-- Floating Version Switcher (no canto para alternar entre V1 e V2) -->
   <aside class="version-dock" aria-label="Seletor de versão">
     <a href="index.html" class="version-tab" title="Ver versão anterior">Versão 1</a>
     <a href="v2.html" class="version-tab active" title="Versão atual Dribbble">Versão 2 (Nova)</a>
   </aside>
 
-  <!-- Outer Floating Canvas Frame (Inspirado no Dribbble de Dymas Alfin) -->
-  <div class="canvas-wrapper">
-    <div class="canvas-container">
+  <!-- ================= FLOATING HEADER DOCK ================= -->
+  <header class="dribbble-header" id="v2-header">
+    <div class="header-inner">
+      
+      <!-- Left: Status Pill -->
+      <div class="header-status-pill">
+        <span class="status-emerald-dot"></span>
+        <span class="status-text">Available for New Projects</span>
+      </div>
 
-      <!-- ================= FLOATING HEADER DOCK ================= -->
-      <header class="dribbble-header" id="v2-header">
+      <!-- Center: Navigation Links with Count Badges -->
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li><a href="#about" class="nav-item">Sobre</a></li>
+          <li><a href="#experience" class="nav-item">Percurso <span class="nav-count">[2y+]</span></a></li>
+          <li><a href="#tools" class="nav-item">Ferramentas <span class="nav-count">[10]</span></a></li>
+          <li><a href="#methodology" class="nav-item">Metodologia <span class="nav-count">[4C]</span></a></li>
+          <li><a href="#projects" class="nav-item">Projetos <span class="nav-count">[3]</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Actions -->
+      <div class="header-actions">
+        <a href="https://canva.link/8r5ul8tiru9cutq" target="_blank" rel="noopener noreferrer" class="btn-cv-pill">
+          CV
+        </a>
+        <a href="mailto:danielam.workmail@gmail.com" class="btn-talk-pill">
+          Vamos Conversar <span class="arrow-up-right">↗</span>
+        </a>
+        <button id="v2-theme-toggle" class="btn-icon-circle" title="Alternar tema">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION (FULL WIDTH ORANGE + DRIBBLE STRUCTURE) ================= -->
+  <section class="v2-hero-orange" id="hero">
+    
+    <!-- Background Ambient Glow & Circular Rings -->
+    <div class="hero-bg-shapes">
+      <div class="bg-ring ring-1"></div>
+      <div class="bg-ring ring-2"></div>
+    </div>
+
+    <!-- Monumental Layered Typography (Full Screen Width) -->
+    <div class="hero-huge-typography" aria-hidden="true">
+      <span class="huge-word outline-word">DANIEL</span>
+      <span class="huge-word solid-word">MARQUES</span>
+    </div>
+
+    <!-- Central Creator Portrait Layer (Rising smoothly from bottom) -->
+    <div class="hero-creator-stage">
+      <div class="creator-arch-frame">
+        <img src="daniel_photo.jpg" alt="Daniel Marques" class="creator-cutout-img">
+        <div class="creator-arch-shadow"></div>
+      </div>
+    </div>
+
+    <!-- Bottom Content Row: Left Bio/Presentation + Right Contact Stack -->
+    <div class="hero-bottom-container">
+      <div class="hero-bottom-grid">
         
-        <!-- Left: Status Pill with pulsing emerald dot -->
-        <div class="header-status-pill">
-          <span class="status-emerald-dot"></span>
-          <span class="status-text">Available for New Projects</span>
+        <!-- Bottom Left: Apresentação -->
+        <div class="hero-bio-block">
+          <span class="role-kicker"><span class="kicker-slash">/</span> DIGITAL MARKETING & STRATEGY</span>
+          <h1 class="hero-role-title">Olá, o meu nome é <span class="text-underline">DANIEL.</span></h1>
+          <p class="hero-role-desc">
+            Trato cada marca como um projeto único. Desenvolvo a estratégia que molda a sua comunicação e identidade de marca, com um foco claro: estabelecer uma posição distintiva no mercado.
+          </p>
+          <div class="hero-actions-row">
+            <a href="#projects" class="btn-collaborate">
+              Explorar Projetos <span class="arrow-up-right">↗</span>
+            </a>
+            <a href="tel:+351965711655" class="btn-tel-pill">
+              <i class="fa-solid fa-phone"></i> +351 965 711 655
+            </a>
+          </div>
         </div>
 
-        <!-- Center: Minimal Navigation with Count Badges -->
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li><a href="#about" class="nav-item">Sobre</a></li>
-            <li><a href="#experience" class="nav-item">Percurso <span class="nav-count">[2y+]</span></a></li>
-            <li><a href="#tools" class="nav-item">Ferramentas <span class="nav-count">[10]</span></a></li>
-            <li><a href="#methodology" class="nav-item">Metodologia <span class="nav-count">[4C]</span></a></li>
-            <li><a href="#projects" class="nav-item">Projetos <span class="nav-count">[3]</span></a></li>
-          </ul>
-        </nav>
+        <!-- Bottom Right: Contactos em Stack Vertical (Estilo Dribbble) -->
+        <div class="hero-social-stack">
+          <span class="contact-stack-label">CONTACTOS</span>
+          
+          <a href="https://www.linkedin.com/in/daniel-amorim-marques-2092b6295/" target="_blank" rel="noopener noreferrer" class="social-pill">
+            <span class="pill-left"><i class="fa-brands fa-linkedin"></i> LinkedIn</span>
+            <span class="pill-arrow">↗</span>
+          </a>
 
-        <!-- Right: Actions (CV + Let's Talk CTA) -->
-        <div class="header-actions">
-          <a href="https://canva.link/8r5ul8tiru9cutq" target="_blank" rel="noopener noreferrer" class="btn-cv-pill">
-            CV
+          <a href="https://wa.me/351965711655" target="_blank" rel="noopener noreferrer" class="social-pill">
+            <span class="pill-left"><i class="fa-brands fa-whatsapp"></i> WhatsApp</span>
+            <span class="pill-arrow">↗</span>
           </a>
-          <a href="mailto:danielam.workmail@gmail.com" class="btn-talk-pill">
-            Vamos Conversar <span class="arrow-up-right">↗</span>
-          </a>
-          <button id="v2-theme-toggle" class="btn-icon-circle" title="Alternar tema">
-            <i class="fa-solid fa-moon"></i>
+
+          <button class="social-pill copy-btn" data-copy="danielam.workmail@gmail.com" title="Clique para copiar">
+            <span class="pill-left"><i class="fa-solid fa-envelope"></i> danielam.workmail@gmail.com</span>
+            <span class="pill-arrow"><i class="fa-regular fa-copy"></i></span>
           </button>
+
+          <a href="https://canva.link/8r5ul8tiru9cutq" target="_blank" rel="noopener noreferrer" class="social-pill highlight-pill">
+            <span class="pill-left"><i class="fa-solid fa-file-pdf"></i> Curriculum Vitae</span>
+            <span class="pill-arrow">↗</span>
+          </a>
         </div>
 
-      </header>
+      </div>
+    </div>
 
-      <!-- ================= HERO / ENTRANCE SECTION ================= -->
-      <section class="v2-hero-section" id="hero">
+  </section>
+
+  <!-- ================= ABOUT & 4 PILLARS ================= -->
+  <section class="v2-section fullwidth-section bg-alt" id="about">
+    <div class="container-fw">
+      <div class="section-top-header">
+        <h2 class="editorial-title">Áreas de Especialização</h2>
+        <p class="section-sub">Pilares estratégicos de atuação em Marketing Digital e Estratégia de Marca:</p>
+      </div>
+
+      <div class="v2-pillars-accordion">
         
-        <!-- Giant Layered Background Typography -->
-        <div class="hero-huge-typography" aria-hidden="true">
-          <span class="huge-word outline-word">DANIEL</span>
-          <span class="huge-word solid-word">MARQUES</span>
+        <div class="accordion-row active" data-pillar="strategy">
+          <div class="accordion-num">01</div>
+          <div class="accordion-name">
+            <h3>STRATEGY</h3>
+            <span class="accordion-badge">Go-To-Market & Planeamento 360°</span>
+          </div>
+          <p class="accordion-summary">
+            Definição de objetivos de negócio, análise dos 4 C's, seleção estratégica de canais e posicionamento para diferenciação competitiva.
+          </p>
+          <div class="accordion-action"><span class="row-arrow">↗</span></div>
         </div>
 
-        <!-- Central Creator Portrait Layer (Slides smoothly from bottom) -->
-        <div class="hero-creator-stage">
-          <div class="creator-arch-frame">
-            <img src="daniel_photo.jpg" alt="Daniel Marques" class="creator-cutout-img">
-            <div class="creator-halo-glow"></div>
+        <div class="accordion-row" data-pillar="branding">
+          <div class="accordion-num">02</div>
+          <div class="accordion-name">
+            <h3>BRANDING</h3>
+            <span class="accordion-badge">Território & Tom de Voz</span>
           </div>
+          <p class="accordion-summary">
+            Construção de narrativas de marca consistentes, tom de voz adaptado e identidade verbal que geram reconhecimento e fidelização.
+          </p>
+          <div class="accordion-action"><span class="row-arrow">↗</span></div>
         </div>
 
-        <!-- Hero Bottom Two-Column Content (Staggers in on load) -->
-        <div class="hero-bottom-grid">
-          
-          <!-- Bottom Left: Role, Bio & CTA -->
-          <div class="hero-bio-block">
-            <span class="role-kicker"><span class="kicker-slash">/</span> STRATEGY & MARKETING</span>
-            <h1 class="hero-role-title">Digital Marketing & Strategy</h1>
-            <p class="hero-role-desc">
-              Trato cada marca como um projeto único. Desenvolvo a estratégia que molda a sua comunicação e identidade, com um foco claro: estabelecer uma posição distintiva no mercado.
-            </p>
-            <div class="hero-actions-row">
-              <a href="#projects" class="btn-collaborate">
-                Explorar Projetos <span class="arrow-up-right">↗</span>
-              </a>
-              <a href="tel:+351965711655" class="btn-tel-pill">
-                <i class="fa-solid fa-phone"></i> +351 965 711 655
-              </a>
-            </div>
+        <div class="accordion-row" data-pillar="social">
+          <div class="accordion-num">03</div>
+          <div class="accordion-name">
+            <h3>SOCIAL MEDIA</h3>
+            <span class="accordion-badge">Gestão & Calendário Editorial</span>
           </div>
-
-          <!-- Bottom Right: Vertical Social Pills Stack -->
-          <div class="hero-social-stack">
-            <a href="https://www.linkedin.com/in/daniel-amorim-marques-2092b6295/" target="_blank" rel="noopener noreferrer" class="social-pill">
-              <i class="fa-brands fa-linkedin"></i>
-              <span>LinkedIn</span>
-              <span class="pill-arrow">↗</span>
-            </a>
-            <a href="https://wa.me/351965711655" target="_blank" rel="noopener noreferrer" class="social-pill">
-              <i class="fa-brands fa-whatsapp"></i>
-              <span>WhatsApp</span>
-              <span class="pill-arrow">↗</span>
-            </a>
-            <button class="social-pill copy-btn" data-copy="danielam.workmail@gmail.com" title="Copiar email">
-              <i class="fa-solid fa-envelope"></i>
-              <span>Email</span>
-              <span class="pill-arrow"><i class="fa-regular fa-copy"></i></span>
-            </button>
-            <a href="https://canva.link/8r5ul8tiru9cutq" target="_blank" rel="noopener noreferrer" class="social-pill">
-              <i class="fa-solid fa-file-pdf"></i>
-              <span>Curriculum Vitae</span>
-              <span class="pill-arrow">↗</span>
-            </a>
-          </div>
-
+          <p class="accordion-summary">
+            Criação de conteúdos, gestão operacional de redes sociais, community management ativo e planeamento de campanhas orientadas a engajamento.
+          </p>
+          <div class="accordion-action"><span class="row-arrow">↗</span></div>
         </div>
 
-      </section>
-
-      <!-- ================= SECTION: ABOUT & CORE PILLARS ================= -->
-      <section class="v2-section" id="about">
-        <div class="section-top-header">
-          <span class="section-tag-pill">/ ÁREAS DE ATUAÇÃO</span>
-          <h2 class="editorial-title">Core Pillars</h2>
-          <span class="ghost-watermark">SERVICES</span>
+        <div class="accordion-row" data-pillar="audit">
+          <div class="accordion-num">04</div>
+          <div class="accordion-name">
+            <h3>MARKETING AUDIT</h3>
+            <span class="accordion-badge">Diagnóstico & KPIs</span>
+          </div>
+          <p class="accordion-summary">
+            Avaliação rigorosa da presença digital, benchmarking com concorrentes diretos e identificação de oportunidades de otimização no funil.
+          </p>
+          <div class="accordion-action"><span class="row-arrow">↗</span></div>
         </div>
 
-        <div class="v2-pillars-accordion">
-          
-          <div class="accordion-row active" data-pillar="strategy">
-            <div class="accordion-num">01</div>
-            <div class="accordion-name">
-              <h3>STRATEGY</h3>
-              <span class="accordion-badge">Go-To-Market & Planeamento 360°</span>
-            </div>
-            <p class="accordion-summary">
-              Definição de objetivos de negócio, análise dos 4 C's, seleção estratégica de canais e posicionamento para diferenciação competitiva.
-            </p>
-            <div class="accordion-action"><span class="row-arrow">↗</span></div>
-          </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="accordion-row" data-pillar="branding">
-            <div class="accordion-num">02</div>
-            <div class="accordion-name">
-              <h3>BRANDING</h3>
-              <span class="accordion-badge">Território & Tom de Voz</span>
-            </div>
-            <p class="accordion-summary">
-              Construção de narrativas de marca consistentes, tom de voz adaptado e identidade verbal que geram reconhecimento e fidelização.
-            </p>
-            <div class="accordion-action"><span class="row-arrow">↗</span></div>
-          </div>
+  <!-- ================= TIMELINE HORIZONTAL ================= -->
+  <section class="v2-section fullwidth-section bg-orange-solid" id="experience">
+    <div class="container-fw">
+      <div class="section-top-header text-center">
+        <h2 class="editorial-title text-white">Trajetória Profissional & Académica</h2>
+        <p class="section-sub text-white-88">Percurso profissional e percurso académico em paralelo na linha temporal.</p>
+      </div>
 
-          <div class="accordion-row" data-pillar="social">
-            <div class="accordion-num">03</div>
-            <div class="accordion-name">
-              <h3>SOCIAL MEDIA</h3>
-              <span class="accordion-badge">Gestão & Calendário Editorial</span>
-            </div>
-            <p class="accordion-summary">
-              Criação de conteúdos, gestão operacional de redes sociais, community management ativo e planeamento de campanhas orientadas a engajamento.
-            </p>
-            <div class="accordion-action"><span class="row-arrow">↗</span></div>
-          </div>
+      <div class="horizontal-timeline-wrapper">
+        <div class="horizontal-timeline">
 
-          <div class="accordion-row" data-pillar="audit">
-            <div class="accordion-num">04</div>
-            <div class="accordion-name">
-              <h3>MARKETING AUDIT</h3>
-              <span class="accordion-badge">Diagnóstico & KPIs</span>
-            </div>
-            <p class="accordion-summary">
-              Avaliação rigorosa da presença digital, benchmarking com concorrentes diretos e identificação de oportunidades de otimização no funil.
-            </p>
-            <div class="accordion-action"><span class="row-arrow">↗</span></div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- ================= SECTION: EXPERIENCE & ACADEMIC ================= -->
-      <section class="v2-section dark-card-section" id="experience">
-        <div class="section-top-header light">
-          <span class="section-tag-pill light">/ PERCURSO</span>
-          <h2 class="editorial-title text-white">Trajetória & Formação</h2>
-          <span class="ghost-watermark light">EXPERIENCE</span>
-        </div>
-
-        <div class="dark-experience-grid">
-          
-          <!-- Professional Experience Block -->
-          <div class="exp-block">
-            <div class="exp-block-header">
-              <span class="exp-type-pill"><i class="fa-solid fa-briefcase"></i> Experiência Profissional</span>
-              <span class="exp-date">Out 2025 – Fev 2026</span>
-            </div>
-            <h3 class="exp-title">Social Media Marketing Assistant</h3>
-            <h4 class="exp-company">STREAM PLAN EVENTS — Lisboa</h4>
-            <p class="exp-project"><i class="fa-solid fa-flag-checkered text-orange"></i> <strong>Projeto:</strong> Ride Across Portugal</p>
-            <ul class="exp-checklist">
-              <li>Pesquisa de Mercado & Comportamento do Consumidor</li>
-              <li>Gestão de Redes Sociais, Conteúdos e Calendário Editorial</li>
-              <li>Community Management & Estratégia de Campanhas</li>
-              <li>Métricas de Performance, Relatórios & Analytics</li>
-            </ul>
-          </div>
-
-          <!-- Academic Background Block -->
-          <div class="exp-block">
-            <div class="exp-block-header">
-              <span class="exp-type-pill"><i class="fa-solid fa-graduation-cap"></i> Formação Académica</span>
-              <span class="exp-date">2024 – 2026</span>
+          <!-- TOP TRACK: PERCURSO PROFISSIONAL -->
+          <div class="timeline-track top-track">
+            <div class="track-header-row">
+              <span class="track-pill">
+                <i class="fa-solid fa-briefcase"></i> PERCURSO PROFISSIONAL
+              </span>
             </div>
 
-            <!-- Degree 1 -->
-            <div class="academic-item">
-              <div class="academic-item-top">
-                <h4 class="academic-degree">CTeSP em Marketing Digital</h4>
-                <span class="academic-grade">Média: 18 / 20</span>
+            <div class="track-content-row">
+              <div class="h-card-spacer"></div>
+
+              <!-- Stream Plan Events Card -->
+              <div class="h-card professional-card">
+                <div class="h-card-header">
+                  <span class="role-badge">Social Media Marketing Assistant</span>
+                  <span class="time-badge"><i class="fa-regular fa-calendar"></i> Out 2025 – Fev 2026</span>
+                </div>
+                <h4 class="company-title">STREAM PLAN EVENTS — Lisboa</h4>
+                <p class="project-tag"><i class="fa-solid fa-flag-checkered"></i> <strong>Projeto:</strong> Ride Across Portugal</p>
+                <ul class="duties-list compact">
+                  <li><i class="fa-solid fa-check"></i> Pesquisa de Mercado & Comportamento do Consumidor</li>
+                  <li><i class="fa-solid fa-check"></i> Gestão de Redes Sociais, Conteúdo & Agendamento</li>
+                  <li><i class="fa-solid fa-check"></i> Community Management & Estratégia de Campanhas</li>
+                  <li><i class="fa-solid fa-check"></i> Métricas de Performance, Relatórios & Analytics</li>
+                </ul>
               </div>
-              <p class="academic-school">Instituto Politécnico Lusófono (IPLUSO) — Lisboa</p>
-              <p class="academic-internship">
-                <i class="fa-solid fa-award text-orange"></i> Estágio Curricular: <strong>Inovcorp</strong> (Avaliação: <strong>19 / 20</strong>)
-              </p>
             </div>
+          </div>
 
-            <div class="academic-divider"></div>
-
-            <!-- Degree 2 -->
-            <div class="academic-item">
-              <div class="academic-item-top">
-                <h4 class="academic-degree">Digital Marketing & Strategy</h4>
-                <span class="academic-grade">Nota: 17 / 20</span>
+          <!-- CENTRAL CHRONOLOGICAL AXIS -->
+          <div class="timeline-axis-container">
+            <div class="axis-line"></div>
+            <div class="axis-points-row">
+              
+              <div class="axis-node-item">
+                <div class="node-marker"><i class="fa-solid fa-graduation-cap"></i></div>
+                <span class="node-year">Mar 2024</span>
+                <span class="node-hint">Início Formação EDIT.</span>
               </div>
-              <p class="academic-school">EDIT. – Disruptive Digital Education</p>
-              <p class="academic-note">Projeto 360° de Marketing: Bandida do Pomar</p>
+
+              <div class="axis-node-item">
+                <div class="node-marker"><i class="fa-solid fa-building-columns"></i></div>
+                <span class="node-year">Out 2024</span>
+                <span class="node-hint">Início CTeSP IPLUSO</span>
+              </div>
+
+              <div class="axis-node-item highlight-node">
+                <div class="node-marker"><i class="fa-solid fa-briefcase"></i></div>
+                <span class="node-year">Out 2025 – Fev 2026</span>
+                <span class="node-hint">Stream Plan Events</span>
+              </div>
+
+              <div class="axis-node-item">
+                <div class="node-marker"><i class="fa-solid fa-award"></i></div>
+                <span class="node-year">Jul 2026</span>
+                <span class="node-hint">Conclusão CTeSP & Estágio</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- BOTTOM TRACK: PERCURSO ACADÉMICO -->
+          <div class="timeline-track bottom-track">
+            <div class="track-header-row">
+              <span class="track-pill">
+                <i class="fa-solid fa-graduation-cap"></i> PERCURSO ACADÉMICO
+              </span>
             </div>
 
+            <div class="track-content-row academic-row">
+              
+              <!-- Academic Card 1: EDIT. -->
+              <div class="h-card academic-card">
+                <div class="h-card-header">
+                  <span class="role-badge">Digital Marketing & Strategy</span>
+                  <span class="grade-pill"><i class="fa-solid fa-star"></i> Nota: 17 / 20</span>
+                </div>
+                <span class="time-badge"><i class="fa-regular fa-calendar"></i> Mar 2024 – Jul 2024</span>
+                <h4 class="company-title">EDIT. – Disruptive Digital Education</h4>
+                <div class="academic-highlight">
+                  <p class="highlight-text"><i class="fa-solid fa-bullseye"></i> <strong>Projeto 360° de Marketing:</strong> Bandida do Pomar — estratégia integral de marca e comunicação.</p>
+                </div>
+              </div>
+
+              <!-- Academic Card 2: IPLUSO -->
+              <div class="h-card academic-card">
+                <div class="h-card-header">
+                  <span class="role-badge">CTeSP em Marketing Digital</span>
+                  <span class="grade-pill"><i class="fa-solid fa-star"></i> Média: 18 / 20</span>
+                </div>
+                <span class="time-badge"><i class="fa-regular fa-calendar"></i> Out 2024 – Jul 2026</span>
+                <h4 class="company-title">Instituto Politécnico Lusófono (IPLUSO) — Lisboa</h4>
+                <div class="academic-highlight">
+                  <div class="highlight-badge">
+                    <i class="fa-solid fa-award"></i> Estágio Curricular: <strong>Inovcorp</strong>
+                  </div>
+                  <p class="grade-note">Avaliação de Estágio: <strong class="text-orange">19 / 20</strong></p>
+                  <p class="highlight-text">Planos de comunicação, campanhas publicitárias e estratégias de lançamento de produtos/serviços.</p>
+                </div>
+              </div>
+
+            </div>
           </div>
 
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <!-- ================= SECTION: METHODOLOGY (4 C'S) ================= -->
-      <section class="v2-section" id="methodology">
-        <div class="section-top-header">
-          <span class="section-tag-pill">/ METODOLOGIA</span>
-          <h2 class="editorial-title">Como Eu Trabalho</h2>
-          <span class="ghost-watermark">PROCESS</span>
+  <!-- ================= TOOLS & TECH STACK ================= -->
+  <section class="v2-section fullwidth-section bg-main" id="tools">
+    <div class="container-fw">
+      <div class="section-top-header text-center">
+        <h2 class="editorial-title">Ferramentas & Tecnologias</h2>
+        <p class="section-sub">O ecossistema digital utilizado para análise de dados, métricas, publicidade e criação de conteúdo.</p>
+      </div>
+
+      <div class="v2-tools-pills-row">
+        <span class="tech-pill"><i class="fa-solid fa-chart-line text-orange"></i> Google Analytics 4</span>
+        <span class="tech-pill"><i class="fa-brands fa-meta" style="color:#0668E1;"></i> Meta Ads & Suite</span>
+        <span class="tech-pill"><i class="fa-brands fa-google" style="color:#EA4335;"></i> Google Ads</span>
+        <span class="tech-pill"><i class="fa-solid fa-chart-simple" style="color:#4285F4;"></i> Looker Studio</span>
+        <span class="tech-pill"><i class="fa-solid fa-chart-pie" style="color:#F2C811;"></i> Power BI</span>
+        <span class="tech-pill"><i class="fa-brands fa-figma" style="color:#F24E1E;"></i> Figma</span>
+        <span class="tech-pill"><i class="fa-brands fa-shopify" style="color:#96BF48;"></i> Shopify</span>
+        <span class="tech-pill"><i class="fa-brands fa-mailchimp" style="color:#FFE01B;"></i> Mailchimp</span>
+        <span class="tech-pill"><i class="fa-brands fa-wordpress" style="color:#21759B;"></i> WordPress</span>
+        <span class="tech-pill"><i class="fa-solid fa-note-sticky"></i> Notion</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= METHODOLOGY ================= -->
+  <section class="v2-section fullwidth-section bg-alt" id="methodology">
+    <div class="container-fw">
+      <div class="section-top-header text-center">
+        <h2 class="editorial-title">A Minha Metodologia</h2>
+        <p class="section-sub">Abordagem estratégica baseada em dados para soluções integradas e com impacto comercial duradouro.</p>
+      </div>
+
+      <div class="v2-methodology-steps">
+        <div class="step-card">
+          <span class="step-index">01</span>
+          <h3 class="step-heading">ANALYSIS</h3>
+          <p class="step-subheading">Os 4 C's da Estratégia de Marca</p>
+          <p class="step-body">
+            Análise de mercado e tendências, benchmarking de concorrentes diretos/indiretos, diagnóstico de marca, compreensão do consumidor e análise cultural.
+          </p>
         </div>
 
-        <div class="v2-methodology-steps">
-          
-          <div class="step-card">
-            <span class="step-index">01</span>
-            <h3 class="step-heading">ANALYSIS</h3>
-            <p class="step-subheading">Os 4 C's da Estratégia de Marca</p>
-            <p class="step-body">
-              Análise de mercado, benchmarking de concorrentes, diagnóstico de posicionamento de marca, necessidades dos consumidores e contexto cultural.
-            </p>
+        <div class="step-card">
+          <span class="step-index">02</span>
+          <h3 class="step-heading">STRATEGY</h3>
+          <p class="step-subheading">Plano de Comunicação & Editorial</p>
+          <p class="step-body">
+            Definição clara de objetivos, território de marca, tom de voz, seleção de canais e públicos, e estruturação do calendário editorial de conteúdos.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-index">03</span>
+          <h3 class="step-heading">EXECUTION</h3>
+          <p class="step-subheading">Implementação & Ativação</p>
+          <p class="step-body">
+            Produção de conteúdos, gestão e ativação operacional em múltiplos canais digitais, alinhamento multicanal e gestão ágil do plano de ação.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-index">04</span>
+          <h3 class="step-heading">OPTIMISATION</h3>
+          <p class="step-subheading">Avaliação & Melhoria Contínua</p>
+          <p class="step-body">
+            Monitorização de resultados em tempo real, acompanhamento rigoroso de métricas e KPIs chave, identificação de oportunidades e otimização contínua.
+          </p>
+        </div>
+      </div>
+
+      <div class="v2-goal-card">
+        <i class="fa-solid fa-bullseye text-orange"></i>
+        <span><strong>Objetivo Final:</strong> Gerar <strong class="text-orange">impacto real</strong>, construir marcas fortes e criar <strong class="text-orange">valor sustentável</strong>.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="v2-section fullwidth-section bg-main" id="projects">
+    <div class="container-fw">
+      <div class="section-top-header text-center">
+        <h2 class="editorial-title">Projetos em Destaque</h2>
+        <p class="section-sub">Estratégias reais, planeamento 360°, identidade de marca e gestão de redes sociais.</p>
+      </div>
+
+      <div class="v2-projects-grid">
+        
+        <!-- Project 1: KOENIGSEGG -->
+        <article class="v2-project-card">
+          <div class="project-tag-row">
+            <span class="p-discipline">Social Media</span>
+            <span class="p-type">CTeSP Project</span>
           </div>
-
-          <div class="step-card">
-            <span class="step-index">02</span>
-            <h3 class="step-heading">STRATEGY</h3>
-            <p class="step-subheading">Plano de Comunicação & Editorial</p>
-            <p class="step-body">
-              Definição de objetivos, posicionamento, mensagens-chave, seleção criteriosa de canais e criação do calendário editorial estruturado.
-            </p>
+          <h3 class="p-title">KOENIGSEGG</h3>
+          <p class="p-quote"><em>"Designed and Engineered by Dreamers"</em></p>
+          <p class="p-desc">
+            Reposicionamento da presença digital da marca de hipercarros, construindo um tom de voz distintivo, pilares de conteúdo e calendário editorial de alto impacto.
+          </p>
+          <div class="p-actions">
+            <a href="https://canva.link/9htzv8b2qjcw25u" target="_blank" rel="noopener noreferrer" class="p-btn-primary">
+              Ver Apresentação Completa <span class="arrow-up-right">↗</span>
+            </a>
           </div>
+        </article>
 
-          <div class="step-card">
-            <span class="step-index">03</span>
-            <h3 class="step-heading">EXECUTION</h3>
-            <p class="step-subheading">Implementação & Ativação</p>
-            <p class="step-body">
-              Criação de conteúdos, gestão operacional nos canais digitais, alinhamento multicanal e monitorização contínua do plano de ação.
-            </p>
+        <!-- Project 2: SAOLOTO SURF SCHOOL -->
+        <article class="v2-project-card">
+          <div class="project-tag-row">
+            <span class="p-discipline">Strategy</span>
+            <span class="p-type">CTeSP Project</span>
           </div>
-
-          <div class="step-card">
-            <span class="step-index">04</span>
-            <h3 class="step-heading">OPTIMISATION</h3>
-            <p class="step-subheading">Avaliação & Melhoria Contínua</p>
-            <p class="step-body">
-              Acompanhamento de KPIs em tempo real, deteção de pontos de melhoria e ajustes estratégicos para maximizar o retorno e sustentabilidade.
-            </p>
+          <h3 class="p-title">Saoloto Surf School</h3>
+          <p class="p-quote"><em>Go-To-Market & Ecossistema de Comunicação</em></p>
+          <p class="p-desc">
+            Estratégia completa de lançamento de marca (Costa da Caparica), identidade, narrativa, estratégia SEO, marketing de influenciadores e KPIs de funil.
+          </p>
+          <div class="p-actions">
+            <a href="https://docs.google.com/document/d/1nyJL0La-Y9aVfhH8O77bKwNDdBvpBbzNKygbAtj7XVI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="p-btn-secondary">
+              Ver Business Case (Docs) <span class="arrow-up-right">↗</span>
+            </a>
           </div>
+        </article>
 
-        </div>
-
-        <div class="v2-goal-card">
-          <i class="fa-solid fa-bullseye text-orange"></i>
-          <span><strong>Objetivo Final:</strong> Gerar <strong class="text-orange">impacto real</strong>, construir marcas fortes e criar <strong class="text-orange">valor sustentável</strong>.</span>
-        </div>
-      </section>
-
-      <!-- ================= SECTION: TOOLS ================= -->
-      <section class="v2-section" id="tools">
-        <div class="section-top-header">
-          <span class="section-tag-pill">/ FERRAMENTAS</span>
-          <h2 class="editorial-title">Stack & Tecnologias</h2>
-          <span class="ghost-watermark">TOOLS</span>
-        </div>
-
-        <div class="v2-tools-pills-row">
-          <span class="tech-pill"><i class="fa-solid fa-chart-line text-orange"></i> Google Analytics 4</span>
-          <span class="tech-pill"><i class="fa-brands fa-meta" style="color:#0668E1;"></i> Meta Ads & Suite</span>
-          <span class="tech-pill"><i class="fa-brands fa-google" style="color:#EA4335;"></i> Google Ads</span>
-          <span class="tech-pill"><i class="fa-solid fa-chart-simple" style="color:#4285F4;"></i> Looker Studio</span>
-          <span class="tech-pill"><i class="fa-solid fa-chart-pie" style="color:#F2C811;"></i> Power BI</span>
-          <span class="tech-pill"><i class="fa-brands fa-figma" style="color:#F24E1E;"></i> Figma</span>
-          <span class="tech-pill"><i class="fa-brands fa-shopify" style="color:#96BF48;"></i> Shopify</span>
-          <span class="tech-pill"><i class="fa-brands fa-mailchimp" style="color:#FFE01B;"></i> Mailchimp</span>
-          <span class="tech-pill"><i class="fa-brands fa-wordpress" style="color:#21759B;"></i> WordPress</span>
-          <span class="tech-pill"><i class="fa-solid fa-note-sticky"></i> Notion</span>
-        </div>
-      </section>
-
-      <!-- ================= SECTION: PROJECTS ================= -->
-      <section class="v2-section" id="projects">
-        <div class="section-top-header">
-          <span class="section-tag-pill">/ PROJETOS</span>
-          <h2 class="editorial-title">Selected Work</h2>
-          <span class="ghost-watermark">WORK</span>
-        </div>
-
-        <div class="v2-projects-grid">
-          
-          <!-- Project 1: KOENIGSEGG -->
-          <article class="v2-project-card">
-            <div class="project-tag-row">
-              <span class="p-discipline">Social Media</span>
-              <span class="p-type">CTeSP Project</span>
-            </div>
-            <h3 class="p-title">KOENIGSEGG</h3>
-            <p class="p-quote"><em>"Designed and Engineered by Dreamers"</em></p>
-            <p class="p-desc">
-              Reposicionamento da presença digital da marca de hipercarros, construindo um tom de voz distintivo, pilares de conteúdo e calendário editorial de alto impacto.
-            </p>
-            <div class="p-actions">
-              <a href="https://canva.link/9htzv8b2qjcw25u" target="_blank" rel="noopener noreferrer" class="p-btn-primary">
-                Ver Apresentação Completa <span class="arrow-up-right">↗</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 2: SAOLOTO SURF SCHOOL -->
-          <article class="v2-project-card">
-            <div class="project-tag-row">
-              <span class="p-discipline">Strategy</span>
-              <span class="p-type">CTeSP Project</span>
-            </div>
-            <h3 class="p-title">Saoloto Surf School</h3>
-            <p class="p-quote"><em>Go-To-Market & Ecossistema de Comunicação</em></p>
-            <p class="p-desc">
-              Estratégia completa de lançamento de marca (Costa da Caparica), identidade, narrativa, estratégia SEO, marketing de influenciadores e KPIs de funil.
-            </p>
-            <div class="p-actions">
-              <a href="https://docs.google.com/document/d/1nyJL0La-Y9aVfhH8O77bKwNDdBvpBbzNKygbAtj7XVI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="p-btn-secondary">
-                Ver Business Case (Docs) <span class="arrow-up-right">↗</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 3: BRIO. -->
-          <article class="v2-project-card">
-            <div class="project-tag-row">
-              <span class="p-discipline">Strategy</span>
-              <span class="p-type">Estágio Inovcorp</span>
-            </div>
-            <h3 class="p-title">Brio.</h3>
-            <p class="p-quote"><em>Plano de Lançamento & Conteúdos a 90 Dias</em></p>
-            <p class="p-desc">
-              Plano de Marketing para introdução no mercado nos setores de Construção, Remodelação e Imobiliário, alinhado com metas de reconhecimento e geração de leads.
-            </p>
-            <div class="p-actions">
-              <a href="mailto:danielam.workmail@gmail.com" class="p-btn-secondary">
-                Contactar sobre este Projeto <span class="arrow-up-right">↗</span>
-              </a>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- ================= EDITORIAL FOOTER ================= -->
-      <footer class="v2-footer">
-        <div class="v2-footer-content">
-          <div class="footer-left">
-            <span class="footer-name">DANIEL MARQUES</span>
-            <p class="footer-bio">Digital Marketing & Strategy • Lisboa, Portugal</p>
+        <!-- Project 3: BRIO. -->
+        <article class="v2-project-card">
+          <div class="project-tag-row">
+            <span class="p-discipline">Strategy</span>
+            <span class="p-type">Estágio Inovcorp</span>
           </div>
-          <div class="footer-links">
-            <a href="tel:+351965711655">+351 965 711 655</a>
-            <a href="mailto:danielam.workmail@gmail.com">danielam.workmail@gmail.com</a>
-            <a href="https://www.linkedin.com/in/daniel-amorim-marques-2092b6295/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <a href="https://canva.link/8r5ul8tiru9cutq" target="_blank" rel="noopener noreferrer">CV ↗</a>
+          <h3 class="p-title">Brio.</h3>
+          <p class="p-quote"><em>Plano de Lançamento & Conteúdos a 90 Dias</em></p>
+          <p class="p-desc">
+            Plano de Marketing para introdução no mercado nos setores de Construção, Remodelação e Imobiliário, alinhado com metas de reconhecimento e geração de leads.
+          </p>
+          <div class="p-actions">
+            <a href="mailto:danielam.workmail@gmail.com" class="p-btn-secondary">
+              Contactar sobre este Projeto <span class="arrow-up-right">↗</span>
+            </a>
           </div>
-        </div>
-        <div class="v2-footer-bottom">
-          <p>© 2026 Daniel Marques. Todos os direitos reservados.</p>
-        </div>
-      </footer>
+        </article>
 
-    </div><!-- /.canvas-container -->
-  </div><!-- /.canvas-wrapper -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CLEAN MINIMAL FOOTER ================= -->
+  <footer class="v2-clean-footer">
+    <div class="container-fw">
+      <div class="footer-links-row">
+        <a href="tel:+351965711655"><i class="fa-solid fa-phone"></i> +351 965 711 655</a>
+        <a href="mailto:danielam.workmail@gmail.com"><i class="fa-solid fa-envelope"></i> danielam.workmail@gmail.com</a>
+        <a href="https://www.linkedin.com/in/daniel-amorim-marques-2092b6295/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="https://canva.link/8r5ul8tiru9cutq" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Curriculum Vitae</a>
+      </div>
+      <p class="footer-copy">© 2026 Daniel Marques. Todos os direitos reservados.</p>
+      <p class="footer-sub">Digital Marketing & Strategy Portfolio • Lisboa, Portugal</p>
+    </div>
+  </footer>
 
   <!-- Toast Notification -->
   <div id="toast" class="toast">Email copiado para a área de transferência!</div>
