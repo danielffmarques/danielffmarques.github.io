@@ -485,6 +485,15 @@ a {
   overflow: hidden;
 }
 
+.about-section .section-title {
+  color: var(--primary);
+  font-family: var(--font-sans);
+  font-size: clamp(2.1rem, 4.5vw, 2.85rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-bottom: 28px;
+}
+
 .specialization-stage {
   display: flex;
   justify-content: center;
