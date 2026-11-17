@@ -95,7 +95,7 @@ a {
 /* Typography Helpers */
 .text-orange { color: var(--primary) !important; }
 .text-white { color: #FFFFFF !important; }
-.text-white-80 { color: rgba(255, 255, 255, 0.85) !important; }
+.text-white-80 { color: rgba(255, 255, 255, 0.88) !important; }
 .text-green { color: #10B981 !important; }
 .text-center { text-align: center; }
 
@@ -623,55 +623,89 @@ a {
 }
 
 /* ==========================================================================
-   EXPERIENCE & TIMELINE (SOLID ORANGE / CONTRAST SECTION)
+   TIMELINE HORIZONTAL (PROFISSIONAL EM CIMA / ACADÉMICO EM BAIXO)
    ========================================================================== */
 .timeline-section {
   padding: 100px 0;
   background: #FF5400;
   color: #FFFFFF;
+  overflow: hidden;
 }
 
-.timeline-split-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 36px;
+.horizontal-timeline-wrapper {
   margin-top: 48px;
+  overflow-x: auto;
+  padding-bottom: 16px;
 }
 
-.timeline-col-header {
+.horizontal-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-width: 960px;
+}
+
+.track-header-row {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
-.timeline-col-header i {
-  font-size: 1.5rem;
-}
-
-.timeline-col-header h3 {
+.track-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFFFFF;
+  color: #FF5400;
+  padding: 8px 20px;
+  border-radius: var(--radius-pill);
   font-family: var(--font-display);
-  font-size: 1.4rem;
   font-weight: 700;
+  font-size: 0.95rem;
   letter-spacing: 0.05em;
+  border: 2px solid #141517;
+  box-shadow: 3px 3px 0px #141517;
 }
 
-.timeline-card {
+.track-content-row {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.track-content-row.academic-row {
+  grid-template-columns: 1fr 1.3fr;
+}
+
+.h-card-spacer {
+  /* Aligns the professional card chronologically over the 2025-2026 segment */
+  display: flex;
+}
+
+.h-card {
   background: #FFFFFF;
   color: #141517;
-  padding: 32px;
+  padding: 28px;
   border-radius: var(--radius-lg);
-  margin-bottom: 24px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  border: 2px solid #141517;
+  border: 2.5px solid #141517;
+  box-shadow: 6px 6px 0px #141517;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
 }
 
-.timeline-card-header {
+.h-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 8px 8px 0px #141517;
+}
+
+.h-card-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 12px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   flex-wrap: wrap;
 }
 
@@ -687,7 +721,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .grade-pill {
@@ -711,50 +745,120 @@ a {
   padding: 8px 12px;
   border-radius: var(--radius-sm);
   font-size: 0.9rem;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   border-left: 3px solid var(--primary);
 }
 
-.duties-list {
+.duties-list.compact {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
-.duties-list li {
-  font-size: 0.92rem;
+.duties-list.compact li {
+  font-size: 0.9rem;
   color: var(--text-muted);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
-.duties-list li i {
+.duties-list.compact li i {
   color: var(--primary);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .academic-highlight {
-  margin-top: 14px;
-  padding-top: 14px;
+  margin-top: 10px;
+  padding-top: 10px;
   border-top: 1px dashed var(--border-color);
 }
 
 .highlight-badge {
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   margin-bottom: 4px;
 }
 
 .grade-note {
-  font-size: 0.9rem;
-  margin-bottom: 8px;
+  font-size: 0.88rem;
+  margin-bottom: 6px;
 }
 
 .highlight-text {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
+}
+
+/* Central Chronological Axis */
+.timeline-axis-container {
+  position: relative;
+  padding: 16px 0;
+  margin: 12px 0;
+}
+
+.axis-line {
+  position: absolute;
+  top: 36px;
+  left: 6%;
+  right: 6%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 2px;
+}
+
+.axis-points-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.axis-node-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.node-marker {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #FF5400;
+  border: 3px solid #141517;
+  box-shadow: 3px 3px 0px #141517;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+  transition: var(--transition);
+}
+
+.axis-node-item:hover .node-marker {
+  transform: scale(1.15);
+}
+
+.highlight-node .node-marker {
+  background: #141517;
+  color: #FF5400;
+  border-color: #FFFFFF;
+}
+
+.node-year {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #FFFFFF;
+}
+
+.node-hint {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* ==========================================================================
@@ -1140,7 +1244,6 @@ a {
    ========================================================================== */
 @media (max-width: 992px) {
   .about-grid,
-  .timeline-split-grid,
   .methodology-grid {
     grid-template-columns: 1fr;
   }
@@ -1202,5 +1305,9 @@ a {
   .footer-links-row {
     flex-direction: column;
     align-items: center;
+  }
+
+  .horizontal-timeline {
+    min-width: 750px;
   }
 }
