@@ -1215,6 +1215,39 @@ a {
   color: var(--text-light);
 }
 
+/* Version Dock Switcher */
+.version-dock {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  display: flex;
+  background: rgba(15, 17, 21, 0.92);
+  backdrop-filter: blur(12px);
+  padding: 6px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+.version-tab {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #9DA4B2;
+  border-radius: var(--radius-pill);
+  transition: all 0.2s;
+}
+
+.version-tab:hover {
+  color: #FFFFFF;
+}
+
+.version-tab.active {
+  background: var(--primary);
+  color: #FFFFFF;
+}
+
 /* Toast */
 .toast {
   position: fixed;
