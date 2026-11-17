@@ -34,7 +34,7 @@
   --radius-pill: 9999px;
   
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: 'Space Grotesk', sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'Fira Code', monospace;
   
   --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
@@ -403,6 +403,66 @@ a {
   color: var(--primary);
   -webkit-text-stroke: 0;
 }
+
+/* Hero Contact Pills */
+.hero-contacts-pills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.hero-pill-btn {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-main);
+  background: var(--bg-surface);
+  border: 1.5px solid var(--border-color);
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-pill-btn i {
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.pill-copy-icon,
+.pill-ext-icon {
+  font-size: 0.78rem !important;
+  color: var(--text-light) !important;
+  margin-left: 2px;
+  transition: color 0.2s ease;
+}
+
+.hero-pill-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 84, 0, 0.15);
+}
+
+.hero-pill-btn:hover .pill-copy-icon,
+.hero-pill-btn:hover .pill-ext-icon {
+  color: var(--primary) !important;
+}
+
+[data-theme="dark"] .hero-pill-btn {
+  background: var(--bg-surface);
+  border-color: var(--border-color);
+  color: var(--text-main);
+}
+
 
 /* ==========================================================================
    ABOUT & SPECIALIZATION STAGE (DYNAMIC 4-CARD FAN-OUT + SCROLL BIO)
