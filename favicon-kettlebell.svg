@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <!-- Kettlebell Gradients -->
+    <linearGradient id="kbHandle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <radialGradient id="kbBodyGrad" cx="38%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#FF7527"/>
+      <stop offset="60%" stop-color="#FF5400"/>
+      <stop offset="100%" stop-color="#B83200"/>
+    </radialGradient>
+
+    <linearGradient id="kbIronDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#090D16"/>
+    </linearGradient>
+
+    <filter id="kbShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Pro Competition Kettlebell -->
+  <g filter="url(#kbShadow)">
+    <!-- Stainless Steel Loop Handle -->
+    <path d="M 21 28 L 21 16 C 21 8, 43 8, 43 16 L 43 28" 
+          fill="none" stroke="url(#kbHandle)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Cast Iron Bell Main Body -->
+    <circle cx="32" cy="40" r="20" fill="url(#kbBodyGrad)"/>
+
+    <!-- Flat Grounded Bottom -->
+    <path d="M 20 58 Q 32 60 44 58 L 41 55 Q 32 56 23 55 Z" fill="#9A2A00"/>
+
+    <!-- High-End Gym Weight Badge (24kg / Iron Core Accent) -->
+    <circle cx="32" cy="40" r="10" fill="url(#kbIronDark)"/>
+    <circle cx="32" cy="40" r="8.5" fill="none" stroke="#FF5400" stroke-width="1.2"/>
+    <text x="32" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="9" fill="#FFFFFF" text-anchor="middle">24</text>
+
+    <!-- Light Specular Reflection Curve -->
+    <path d="M 20 28 A 17 17 0 0 1 36 21" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+  </g>
+</svg>

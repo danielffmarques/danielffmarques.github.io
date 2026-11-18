@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="csgo-pin-svg">
+  <defs>
+    <!-- Shadow filter for pin depth -->
+    <filter id="csgoDropShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="innerShieldClip">
+      <polygon points="50,10 88,39 74,90 26,90 12,39"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#csgoDropShadow)">
+    <!-- 1. Outer Pentagon Border (Cyan / Teal) -->
+    <polygon points="50,4 96,38 80,96 20,96 4,38" fill="#00A2C7" stroke="#007B99" stroke-width="1.5"/>
+
+    <!-- 2. Darker Teal Teeth / Notches around border (Iconic CS:GO Pin Rim) -->
+    <!-- Top-Left edge notches -->
+    <line x1="20" y1="26" x2="22" y2="28" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="32" y1="17" x2="34" y2="19" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="43" y1="9"  x2="44" y2="12" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- Top-Right edge notches -->
+    <line x1="57" y1="9"  x2="56" y2="12" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="68" y1="17" x2="66" y2="19" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="80" y1="26" x2="78" y2="28" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- Right edge notches -->
+    <line x1="91" y1="48" x2="88" y2="49" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="86" y1="67" x2="83" y2="68" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="81" y1="84" x2="78" y2="84" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- Bottom edge notches -->
+    <line x1="35" y1="96" x2="35" y2="92" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="50" y1="96" x2="50" y2="92" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="65" y1="96" x2="65" y2="92" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- Left edge notches -->
+    <line x1="9"  y1="48" x2="12" y2="49" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="14" y1="67" x2="17" y2="68" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="19" y1="84" x2="22" y2="84" stroke="#00637B" stroke-width="2.2" stroke-linecap="round"/>
+
+    <!-- 3. Inner White/Light Silver Edge -->
+    <polygon points="50,8 91,40 76,92 24,92 9,40" fill="none" stroke="#E2F4F7" stroke-width="1.8"/>
+
+    <!-- 4. Inner Red Shield (Split Tone: Bright Red Left, Deep Shadow Red Right) -->
+    <g clip-path="url(#innerShieldClip)">
+      <!-- Left Half (Bright Crimson) -->
+      <path d="M 50,10 L 12,39 L 26,90 L 50,90 Z" fill="#BA1B28"/>
+      <!-- Right Half (Dark Burgundy) -->
+      <path d="M 50,10 L 88,39 L 74,90 L 50,90 Z" fill="#6A0D15"/>
+    </g>
+
+    <!-- 5. THE HOUSE / HOME STRUCTURE (CS:GO Mirage Architectural Hybrid) -->
+    <!-- Base Platform (Sandstone Mirage Base) -->
+    <rect x="25" y="55" width="50" height="2.5" fill="#2E4C56" rx="0.5"/>
+
+    <!-- House Silhouette: Left Half (Lighter Stone Cyan #609EA8), Right Half (Darker Stone Cyan #3E6F78) -->
+    <!-- Chimney on left -->
+    <rect x="33" y="27" width="5" height="9" fill="#528E99"/>
+    <rect x="32" y="26" width="7" height="1.8" fill="#6FB1BC"/>
+
+    <!-- Left side of House & Roof -->
+    <path d="M 50,21 L 28,37 L 31,37 L 31,55 L 50,55 Z" fill="#5AA0AC"/>
+    <!-- Right side of House & Roof (Shadow) -->
+    <path d="M 50,21 L 72,37 L 69,37 L 69,55 L 50,55 Z" fill="#3D737F"/>
+
+    <!-- Roof eaves highlight line -->
+    <polyline points="28,37 50,21 72,37" fill="none" stroke="#A6E1EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- House Windows / Mirage Slots (Mirage Palace Style) -->
+    <!-- Left Attic Window -->
+    <rect x="42" y="32" width="3" height="4" fill="#1C353D" rx="0.6"/>
+    <!-- Right Attic Window -->
+    <rect x="55" y="32" width="3" height="4" fill="#13242A" rx="0.6"/>
+
+    <!-- Center Warm Welcoming Door (Clearly communicating "HOME") -->
+    <path d="M 46,55 L 46,43 C 46,41 54,41 54,43 L 54,55 Z" fill="#FDE047"/>
+    <path d="M 47,55 L 47,44 C 47,42.5 50,42.5 50,44 L 50,55 Z" fill="#FEF08A"/>
+    <!-- Door handle -->
+    <circle cx="48" cy="49" r="0.7" fill="#854D0E"/>
+
+    <!-- Flanking Mirage Mini-Towers (Side Wings) -->
+    <!-- Left wing -->
+    <rect x="26" y="42" width="5" height="13" fill="#4B8591"/>
+    <rect x="25" y="41" width="7" height="1.8" fill="#6DB3BF"/>
+    <!-- Right wing -->
+    <rect x="69" y="42" width="5" height="13" fill="#35646E"/>
+    <rect x="68" y="41" width="7" height="1.8" fill="#518E9B"/>
+
+    <!-- 6. CS:GO Label & Golden Palm Laurels -->
+    <text x="50" y="64" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="900" font-size="7" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">CS GO</text>
+
+    <!-- Mirage Palm Leaves / Laurels (Gold/Olive) -->
+    <!-- Left Branch -->
+    <path d="M 46,73 Q 32,71 21,65" fill="none" stroke="#D1DC67" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M 24,66 Q 28,68 31,67 M 29,67 Q 34,70 37,69 M 35,70 Q 40,72 43,71" stroke="#D1DC67" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Right Branch -->
+    <path d="M 54,73 Q 68,71 79,65" fill="none" stroke="#A7B343" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M 76,66 Q 72,68 69,67 M 71,67 Q 66,70 63,69 M 65,70 Q 60,72 57,71" stroke="#A7B343" stroke-width="1.2" stroke-linecap="round"/>
+
+    <!-- Bottom MIRAGE Label with Star -->
+    <text x="47" y="84" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="800" font-size="8.5" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.8">MIRAGE</text>
+    <!-- Star -->
+    <polygon points="67,78 68.5,81 72,81.5 69.5,83.5 70.2,87 67,85.2 63.8,87 64.5,83.5 62,81.5 65.5,81" fill="#22C55E"/>
+  </g>
+</svg>

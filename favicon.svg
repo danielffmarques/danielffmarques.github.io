@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .dm-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 900;
+        font-size: 38px;
+        letter-spacing: -2px;
+      }
+    </style>
+  </defs>
+  <text x="32" y="46" text-anchor="middle" class="dm-text" fill="#FF5400">DM</text>
+</svg>

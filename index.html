@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel Marques | Digital Marketing & Strategy Portfolio 2026</title>
+  <title>Portfolio Daniel Marques</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta name="description" content="Portfólio de Marketing Digital e Estratégia de Daniel Marques. Estratégia de marca, social media, auditoria de marketing e planeamento de campanhas.">
   
   <!-- Google Fonts -->
@@ -21,27 +22,114 @@
   <!-- ================= TOP NAVIGATION / ÍNDICE ================= -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">
+      <div class="nav-status-badge">
         <span class="pulse-dot"></span>
         <span class="nav-status-text">Disponível para Oportunidades</span>
-      </a>
+      </div>
 
       <nav class="nav-menu" id="nav-menu">
         <ul class="nav-list">
+          <li>
+            <a href="#hero" class="nav-home-btn nav-inferno-btn" id="nav-home-btn" aria-label="Início • Voltar ao topo">
+              <span class="inferno-pin-wrapper">
+                <!-- Clean Modern House Outline (Home) for Normal State -->
+                <svg viewBox="0 0 24 26" class="inferno-svg-outline" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <!-- Chimney -->
+                  <path d="M 16.5,6.5 L 16.5,3.5 L 19,3.5 L 19,8.5" stroke-width="1.8"/>
+                  <!-- Pitched Roof -->
+                  <path d="M 2.5,10.5 L 12,2.5 L 21.5,10.5" stroke-width="2"/>
+                  <!-- House Body -->
+                  <path d="M 4.8,9.8 L 4.8,21 C 4.8,22.1 5.7,23 6.8,23 L 17.2,23 C 18.3,23 19.2,22.1 19.2,21 L 19.2,9.8" stroke-width="1.8"/>
+                  <!-- Door -->
+                  <path d="M 9.5,23 L 9.5,15 C 9.5,14 10.3,13.2 11.3,13.2 L 12.7,13.2 C 13.7,13.2 14.5,14 14.5,15 L 14.5,23" stroke-width="1.6"/>
+                  <!-- Attic Window -->
+                  <circle cx="12" cy="7.8" r="1.3" stroke-width="1.4"/>
+                </svg>
+                <!-- Full-Color Official CS:GO Inferno 2 Pin Image for Hover State -->
+                <img src="inferno-pin.webp" alt="CS:GO Inferno 2 Pin" class="inferno-img-color" aria-hidden="true">
+              </span>
+            </a>
+          </li>
           <li><a href="#about" class="nav-link"><i class="fa-regular fa-user"></i> Sobre</a></li>
           <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Percurso</a></li>
-          <li><a href="#tools" class="nav-link"><i class="fa-solid fa-screwdriver-wrench"></i> Ferramentas</a></li>
           <li><a href="#methodology" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Metodologia</a></li>
+          <li><a href="#tools" class="nav-link"><i class="fa-solid fa-screwdriver-wrench"></i> Ferramentas</a></li>
           <li><a href="#projects" class="nav-link"><i class="fa-solid fa-layer-group"></i> Projetos</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
-        <a href="https://canva.link/8r5ul8tiru9cutq" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-          CV
-        </a>
-        <button id="theme-toggle" class="icon-btn" title="Alternar tema">
-          <i class="fa-solid fa-moon"></i>
+        <button class="btn btn-sm btn-outline nav-cv-btn" data-modal="modal-cv" aria-haspopup="dialog" title="View Curriculum Vitae">
+          <i class="fa-solid fa-file-pdf"></i> CV
+        </button>
+        <!-- Single Language Toggle (Shows EN or PT, starts always in English) -->
+        <button id="lang-toggle" class="btn btn-sm nav-lang-btn" title="Mudar para Português (PT)" aria-label="Mudar para Português (PT)">EN</button>
+        <!-- Sunflower Heliotropism Theme Toggle (Easter Egg 🌻☀️🌙) -->
+        <button id="theme-toggle" class="sunflower-toggle-btn" aria-label="Alternar tema">
+          <span class="toggle-track">
+            <!-- Day Sky Clouds / Night Sky Stars (Lua, 2 Estrelas ao Centro e Girassol) -->
+            <span class="sky-elements" aria-hidden="true">
+              <span class="star star-1">✦</span>
+              <span class="star star-2">★</span>
+              <span class="cloud cloud-1"></span>
+              <span class="cloud cloud-2"></span>
+            </span>
+
+            <!-- Moon (Rises on the Left in Dark Mode) -->
+            <span class="celestial-body moon-body" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M 21 12.79 A 9 9 0 1 1 11.21 3 A 7 7 0 0 0 21 12.79 Z" fill="#FDE047" stroke="#EAB308" stroke-width="1.2" stroke-linejoin="round"/>
+              </svg>
+            </span>
+
+            <!-- Sun (Shines on the Right in Light Mode) -->
+            <span class="celestial-body sun-body" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                <circle cx="12" cy="12" r="5" fill="#F59E0B" stroke="#D97706" stroke-width="1"/>
+                <g stroke="#F59E0B" stroke-width="2" stroke-linecap="round">
+                  <line x1="12" y1="1.5" x2="12" y2="4.2"/>
+                  <line x1="12" y1="19.8" x2="12" y2="22.5"/>
+                  <line x1="1.5" y1="12" x2="4.2" y2="12"/>
+                  <line x1="19.8" y1="12" x2="22.5" y2="12"/>
+                  <line x1="4.5" y1="4.5" x2="6.6" y2="6.6"/>
+                  <line x1="17.4" y1="17.4" x2="19.5" y2="19.5"/>
+                  <line x1="4.5" y1="19.5" x2="6.6" y2="17.4"/>
+                  <line x1="17.4" y1="6.6" x2="19.5" y2="4.5"/>
+                </g>
+              </svg>
+            </span>
+
+            <!-- Girassol & Ramo Fofinho Dinâmico (Ramo passa por detrás da flor) -->
+            <div class="branch-rig" aria-hidden="true">
+              <svg id="branch-svg-canvas" viewBox="0 0 82 38" class="branch-svg" preserveAspectRatio="xMidYMid meet">
+                <!-- Ramo Contínuo Dinâmico (Renderizado por DETRÁS da flor) -->
+                <path id="branch-stem-path" d="M 19 37 C 19 34, 19 30, 19 28 C 19 26, 19 25, 19 24" stroke="#15803D" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <!-- Folhinha Dinâmica -->
+                <path id="branch-leaf-path" d="M 19 30 C 14 28, 12 32, 16 34 C 18 35, 19 32, 19 30 Z" fill="#22C55E" stroke="#15803D" stroke-width="0.7"/>
+                <!-- Cabeça do Girassol Centrada em (0,0) (Renderizada POR CIMA do ramo) -->
+                <g id="branch-sunflower-head" transform="translate(19, 15) rotate(26)">
+                  <g class="sunflower-petals" fill="#FACC15" stroke="#EAB308" stroke-width="0.7">
+                    <ellipse cx="0" cy="-7.2" rx="2.0" ry="3.6"/>
+                    <ellipse cx="0" cy="-7.2" rx="2.0" ry="3.6" transform="rotate(30)"/>
+                    <ellipse cx="0" cy="-7.2" rx="2.0" ry="3.6" transform="rotate(60)"/>
+                    <ellipse cx="0" cy="-7.2" rx="2.0" ry="3.6" transform="rotate(90)"/>
+                    <ellipse cx="0" cy="-7.2" rx="2.0" ry="3.6" transform="rotate(120)"/>
+                    <ellipse cx="0" cy="-7.2" rx="2.0" ry="3.6" transform="rotate(150)"/>
+                    <ellipse cx="0" cy="-7.2" rx="2.0" ry="3.6" transform="rotate(180)"/>
+                    <ellipse cx="0" cy="-7.2" rx="2.0" ry="3.6" transform="rotate(210)"/>
+                    <ellipse cx="0" cy="-7.2" rx="2.0" ry="3.6" transform="rotate(240)"/>
+                    <ellipse cx="0" cy="-7.2" rx="2.0" ry="3.6" transform="rotate(270)"/>
+                    <ellipse cx="0" cy="-7.2" rx="2.0" ry="3.6" transform="rotate(300)"/>
+                    <ellipse cx="0" cy="-7.2" rx="2.0" ry="3.6" transform="rotate(330)"/>
+                  </g>
+                  <circle cx="0" cy="0" r="4.6" fill="#78350F" stroke="#451A03" stroke-width="1"/>
+                  <circle cx="0" cy="0" r="3.4" fill="#92400E"/>
+                  <circle cx="-1" cy="-0.8" r="0.7" fill="#F59E0B" opacity="0.8"/>
+                  <circle cx="1" cy="0.5" r="0.6" fill="#F59E0B" opacity="0.8"/>
+                </g>
+              </svg>
+            </div>
+          </span>
         </button>
         <button id="mobile-toggle" class="icon-btn mobile-only" aria-label="Abrir menu">
           <i class="fa-solid fa-bars"></i>
@@ -60,16 +148,17 @@
 
     <div class="container hero-content hero-centered">
       <div class="hero-titles text-center">
-        <p class="hero-eyebrow">DIGITAL MARKETING & STRATEGY</p>
-        <h1 class="hero-title">PORTFOLIO <span class="highlight-year">2026</span></h1>
+        <p class="hero-eyebrow">MARKETING DIGITAL & ESTRATÉGIA</p>
+        <h1 class="hero-title">PORTFÓLIO <span class="highlight-year">2026</span></h1>
       </div>
 
       <!-- Hero Contacts Pills -->
       <div class="hero-contacts-pills">
-        <a href="tel:+351965711655" class="hero-pill-btn">
+        <button class="hero-pill-btn copy-btn" data-copy="+351 965 711 655" title="Clique para copiar">
           <i class="fa-solid fa-phone"></i>
           <span>+351 965 711 655</span>
-        </a>
+          <i class="fa-regular fa-copy pill-copy-icon"></i>
+        </button>
         <button class="hero-pill-btn copy-btn" data-copy="danielam.workmail@gmail.com" title="Clique para copiar">
           <i class="fa-solid fa-envelope"></i>
           <span>danielam.workmail@gmail.com</span>
@@ -96,7 +185,7 @@
 
       <!-- Section Title -->
       <div class="section-heading text-center">
-        <h2 class="section-title text-orange">Sobre Mim</h2>
+        <h2 class="section-title">Sobre Mim</h2>
       </div>
 
       <!-- Interactive 5-Piece Stage: Center Photo + 2 Cards Left + 2 Cards Right -->
@@ -108,8 +197,8 @@
           <!-- Card 1: Strategy (Far Left) -->
           <article class="spec-card card-left-1" data-pillar="strategy">
             <div class="spec-card-body">
-              <h3 class="spec-title">STRATEGY</h3>
-              <p class="spec-desc">Go-To-Market, posicionamento de marca, 4 C's e planos de comunicação estruturados.</p>
+              <h3 class="spec-title">ESTRATÉGIA</h3>
+              
             </div>
             <div class="spec-tag"><i class="fa-solid fa-compass"></i> Planeamento 360°</div>
           </article>
@@ -118,7 +207,7 @@
           <article class="spec-card card-left-2" data-pillar="branding">
             <div class="spec-card-body">
               <h3 class="spec-title">BRANDING</h3>
-              <p class="spec-desc">Construção de território de marca, tom de voz, identidade verbal e narrativa distintiva.</p>
+              
             </div>
             <div class="spec-tag"><i class="fa-solid fa-star"></i> Diferenciação</div>
           </article>
@@ -142,8 +231,8 @@
           <!-- Card 3: Social Media (Near Right) -->
           <article class="spec-card card-right-1" data-pillar="social">
             <div class="spec-card-body">
-              <h3 class="spec-title">SOCIAL MEDIA</h3>
-              <p class="spec-desc">Gestão de canais, calendários editoriais, community management ativo e campanhas.</p>
+              <h3 class="spec-title">REDES SOCIAIS</h3>
+              
             </div>
             <div class="spec-tag"><i class="fa-solid fa-users"></i> Envolvimento</div>
           </article>
@@ -151,8 +240,8 @@
           <!-- Card 4: Marketing Audit (Far Right) -->
           <article class="spec-card card-right-2" data-pillar="audit">
             <div class="spec-card-body">
-              <h3 class="spec-title">MARKETING AUDIT</h3>
-              <p class="spec-desc">Diagnóstico de presença digital, análise de concorrência, funil de conversão e métricas.</p>
+              <h3 class="spec-title">AUDITORIA DE MARKETING</h3>
+              
             </div>
             <div class="spec-tag"><i class="fa-solid fa-chart-line"></i> Inferência</div>
           </article>
@@ -174,214 +263,189 @@
     </div>
   </section>
 
-  <!-- ================= TIMELINE HORIZONTAL (PROFISSIONAL EM CIMA / ACADÉMICO EM BAIXO) ================= -->
+  <!-- ================= TIMELINE VERTICAL (ESQ: PROFISSIONAL | DRT: ACADÉMICO) ================= -->
   <section class="timeline-section" id="experience">
-    <div class="container">
-      <div class="section-heading text-center">
-        <h2 class="section-title text-white">Trajetória Profissional & Académica</h2>
-        <p class="section-sub text-white-80">Linha cronológica com o percurso profissional e percurso académico em paralelo.</p>
-      </div>
+    <div class="timeline-sticky-pin" id="timelineStickyPin">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2 class="section-title text-white">Trajetória Profissional & Académica</h2>
+        </div>
 
-      <!-- Horizontal Timeline Container -->
-      <div class="horizontal-timeline-wrapper">
-        <div class="horizontal-timeline">
+      <!-- Vertical Timeline Outer Container with Pinned Side Rails -->
+      <div class="timeline-outer-container">
+        
+        <!-- Side Vertical Track Labels -->
+        <div class="timeline-side-rail rail-left" aria-hidden="true">
+          <span class="rail-title"><i class="fa-solid fa-briefcase"></i> PERCURSO PROFISSIONAL</span>
+        </div>
+        <div class="timeline-side-rail rail-right" aria-hidden="true">
+          <span class="rail-title"><i class="fa-solid fa-graduation-cap"></i> PERCURSO ACADÉMICO</span>
+        </div>
 
-          <!-- TOP TRACK: PERCURSO PROFISSIONAL -->
-          <div class="timeline-track top-track">
-            <div class="track-header-row">
-              <span class="track-pill">
-                <i class="fa-solid fa-briefcase"></i> PERCURSO PROFISSIONAL
-              </span>
-            </div>
+        <!-- Constrained Height Window with Top & Bottom Fade (Max ~1 1/2 cards visible at a time) -->
+        <div class="timeline-scroll-window" id="timelineScrollWindow" tabindex="0" aria-label="Trajetória Profissional e Académica interativa">
+          
+          <!-- Vertical Timeline Rows (Alternating: Esq Estágio, Drt CTeSP, Esq Freelancing, Drt EDIT) -->
+          <div class="timeline-v-stream">
 
-            <div class="track-content-row">
-              <!-- Empty spacer to align with chronological timeline (Out 2025 - Fev 2026) -->
-              <div class="h-card-spacer"></div>
+            <!-- Central Vertical Spine Line (Continuous from start to finish) -->
+            <div class="timeline-vertical-spine"></div>
 
-              <!-- Stream Plan Events Card -->
-              <div class="h-card professional-card">
-                <div class="h-card-header">
-                  <span class="role-badge">Social Media Marketing Assistant</span>
-                  <span class="time-badge"><i class="fa-regular fa-calendar"></i> Out 2025 – Fev 2026</span>
-                </div>
-                <h4 class="company-title">STREAM PLAN EVENTS — Lisboa</h4>
-                <p class="project-tag"><i class="fa-solid fa-flag-checkered"></i> <strong>Projeto:</strong> Ride Across Portugal</p>
-                <ul class="duties-list compact">
-                  <li><i class="fa-solid fa-check"></i> Pesquisa de Mercado & Comportamento do Consumidor</li>
-                  <li><i class="fa-solid fa-check"></i> Gestão de Redes Sociais, Conteúdo & Agendamento</li>
-                  <li><i class="fa-solid fa-check"></i> Community Management & Estratégia de Campanhas</li>
-                  <li><i class="fa-solid fa-check"></i> Métricas de Performance, Relatórios & Analytics</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- CENTRAL CHRONOLOGICAL AXIS -->
-          <div class="timeline-axis-container">
-            <div class="axis-line"></div>
-            <div class="axis-points-row">
-              
-              <div class="axis-node-item">
-                <div class="node-marker"><i class="fa-solid fa-graduation-cap"></i></div>
-                <span class="node-year">Mar 2024</span>
-                <span class="node-hint">Início Formação EDIT.</span>
-              </div>
-
-              <div class="axis-node-item">
-                <div class="node-marker"><i class="fa-solid fa-building-columns"></i></div>
-                <span class="node-year">Out 2024</span>
-                <span class="node-hint">Início CTeSP IPLUSO</span>
-              </div>
-
-              <div class="axis-node-item highlight-node">
-                <div class="node-marker"><i class="fa-solid fa-briefcase"></i></div>
-                <span class="node-year">Out 2025 – Fev 2026</span>
-                <span class="node-hint">Stream Plan Events</span>
-              </div>
-
-              <div class="axis-node-item">
-                <div class="node-marker"><i class="fa-solid fa-award"></i></div>
-                <span class="node-year">Jul 2026</span>
-                <span class="node-hint">Conclusão CTeSP & Estágio</span>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- BOTTOM TRACK: PERCURSO ACADÉMICO -->
-          <div class="timeline-track bottom-track">
-            <div class="track-header-row">
-              <span class="track-pill">
-                <i class="fa-solid fa-graduation-cap"></i> PERCURSO ACADÉMICO
-              </span>
-            </div>
-
-            <div class="track-content-row academic-row">
-              
-              <!-- Academic Card 1: EDIT. -->
-              <div class="h-card academic-card">
-                <div class="h-card-header">
-                  <span class="role-badge">Digital Marketing & Strategy</span>
-                  <span class="grade-pill"><i class="fa-solid fa-star"></i> Nota: 17 / 20</span>
-                </div>
-                <span class="time-badge"><i class="fa-regular fa-calendar"></i> Mar 2024 – Jul 2024</span>
-                <h4 class="company-title">EDIT. – Disruptive Digital Education</h4>
-                <div class="academic-highlight">
-                  <p class="highlight-text"><i class="fa-solid fa-bullseye"></i> <strong>Projeto 360° de Marketing:</strong> Bandida do Pomar — estratégia integral de marca e comunicação.</p>
-                </div>
-              </div>
-
-              <!-- Academic Card 2: IPLUSO -->
-              <div class="h-card academic-card">
-                <div class="h-card-header">
-                  <span class="role-badge">CTeSP em Marketing Digital</span>
-                  <span class="grade-pill"><i class="fa-solid fa-star"></i> Média: 18 / 20</span>
-                </div>
-                <span class="time-badge"><i class="fa-regular fa-calendar"></i> Out 2024 – Jul 2026</span>
-                <h4 class="company-title">Instituto Politécnico Lusófono (IPLUSO) — Lisboa</h4>
-                <div class="academic-highlight">
-                  <div class="highlight-badge">
-                    <i class="fa-solid fa-award"></i> Estágio Curricular: <strong>Inovcorp</strong>
+                        <!-- 1. ESQ (Left / Profissional): InovCorp -->
+            <div class="timeline-v-row row-left">
+              <div class="timeline-v-slot slot-left">
+                <article class="timeline-v-card professional-card">
+                  <div class="t-card-header">
+                    <span class="t-date">Mar 2026 – Jun 2026</span>
                   </div>
-                  <p class="grade-note">Avaliação de Estágio: <strong class="text-orange">19 / 20</strong></p>
-                  <p class="highlight-text">Planos de comunicação, campanhas publicitárias e estratégias de lançamento de produtos/serviços.</p>
-                </div>
+                  <h3 class="t-role">Estagiário de Marketing e Comunicação</h3>
+                  <h4 class="t-entity">InovCorp</h4>
+                  <div class="t-highlight-box">
+                    <span class="t-grade-tag">Avaliação do estágio: <strong>19 Valores</strong></span>
+                  </div>
+                  <ul class="t-duties">
+                    <li><i class="fa-solid fa-check"></i> Desenvolvimento de projetos em diferentes áreas do marketing, incluindo Branding, SEO, Marketing de Conteúdos, Paid Media e Auditoria de Marketing.</li>
+                    <li><i class="fa-solid fa-check"></i> Apoio na análise de mercado, consumidor e no desenvolvimento de estratégias e planos de comunicação.</li>
+                    <li><i class="fa-solid fa-check"></i> Acompanhamento de clientes, recolha de briefings e alinhamento de projetos.</li>
+                  </ul>
+                </article>
+              </div>
+              
+              <!-- Center Date Node -->
+              <div class="timeline-v-node">
+                <span class="node-year-pill">2026</span>
               </div>
 
+              <div class="timeline-v-slot slot-right empty-slot"></div>
             </div>
-          </div>
+
+            <!-- 2. DRT (Right / Académico): CTeSP IPLUSO -->
+            <div class="timeline-v-row row-right">
+              <div class="timeline-v-slot slot-left empty-slot"></div>
+
+              <!-- Center Date Node -->
+              <div class="timeline-v-node">
+                <span class="node-year-pill">2024–2026</span>
+              </div>
+
+              <div class="timeline-v-slot slot-right">
+                <article class="timeline-v-card academic-card">
+                  <div class="t-card-header">
+                    <span class="t-date">Out 2024 – Jul 2026</span>
+                  </div>
+                  <h3 class="t-role">CTeSP Marketing Digital</h3>
+                  <h4 class="t-entity">Instituto Politécnico Lusófono (IPLUSO), Lisboa</h4>
+                  <div class="t-highlight-box">
+                    <span class="t-grade-tag grade-gold">Média Final: <strong>18 Valores</strong></span>
+                  </div>
+                  <div class="t-areas-container">
+                    <span class="t-areas-label"><strong>Áreas de formação:</strong></span>
+                    <ul class="t-duties t-areas-list">
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Estratégia e Planeamento de Campanhas</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Marketing de Conteúdos</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Marketing em Redes Sociais</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> SEO</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Publicidade Online</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Métricas e Avaliação de Desempenho</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Estudos de Mercado</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- 3. ESQ (Left / Profissional): STREAM PLAN EVENTS -->
+            <div class="timeline-v-row row-left">
+              <div class="timeline-v-slot slot-left">
+                <article class="timeline-v-card professional-card">
+                  <div class="t-card-header">
+                    <span class="t-date">Out 2025 – Fev 2026</span>
+                  </div>
+                  <h3 class="t-role">Assistente de Marketing em Redes Sociais</h3>
+                  <h4 class="t-entity">STREAM PLAN EVENTS</h4>
+                  <div class="t-highlight-box">
+                    <p class="t-project-note"><strong>Projeto:</strong> Ride Across Portugal</p>
+                  </div>
+                  <ul class="t-duties">
+                    <li><i class="fa-solid fa-check"></i> Análise de mercado e do consumidor para apoiar decisões de comunicação no projeto Ride Across Portugal.</li>
+                    <li><i class="fa-solid fa-check"></i> Elaboração da estratégia de redes sociais, incluindo planeamento, criação e agendamento de conteúdos.</li>
+                    <li><i class="fa-solid fa-check"></i> Gestão de comunidade e acompanhamento da interação com o público nas plataformas digitais.</li>
+                    <li><i class="fa-solid fa-check"></i> Análise de métricas para acompanhar o desempenho das ações desenvolvidas.</li>
+                  </ul>
+                </article>
+              </div>
+
+              <!-- Center Date Node -->
+              <div class="timeline-v-node">
+                <span class="node-year-pill">2025–2026</span>
+              </div>
+
+              <div class="timeline-v-slot slot-right empty-slot"></div>
+            </div>
+
+            <!-- 4. DRT (Right / Académico): EDIT. -->
+            <div class="timeline-v-row row-right">
+              <div class="timeline-v-slot slot-left empty-slot"></div>
+
+              <!-- Center Date Node -->
+              <div class="timeline-v-node">
+                <span class="node-year-pill">2024</span>
+              </div>
+
+              <div class="timeline-v-slot slot-right">
+                <article class="timeline-v-card academic-card">
+                  <div class="t-card-header">
+                    <span class="t-date">Mar 2024 – Jul 2024</span>
+                  </div>
+                  <h3 class="t-role">Digital Marketing & Strategy</h3>
+                  <h4 class="t-entity">EDIT., Disruptive Digital Education</h4>
+                  <div class="t-highlight-box">
+                    <span class="t-grade-tag grade-gold">Média Final: <strong>17 Valores</strong></span>
+                    <p class="t-project-note"><strong>Projeto 360º:</strong> Bandida do Pomar</p>
+                  </div>
+                  <div class="t-areas-container">
+                    <span class="t-areas-label"><strong>Áreas de formação:</strong></span>
+                    <ul class="t-duties t-areas-list">
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Estratégia Digital</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Marketing de Conteúdos e Web Copywriting</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> SEO e SEM</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Google Search Ads</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Display Ads</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Redes Sociais</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Email Marketing</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> Métricas e Analítica</li>
+                      <li><i class="fa-solid fa-arrow-right text-orange"></i> E-commerce</li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </div>
 
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- ================= TOOLS & TECH STACK ================= -->
-  <section class="tools-section" id="tools">
-    <div class="container">
-      <div class="section-heading text-center">
-        <h2 class="section-title">Ferramentas & Tecnologias</h2>
-        <p class="section-sub">O ecossistema digital utilizado para análise de dados, métricas, publicidade e criação de conteúdo.</p>
-      </div>
-
-      <!-- Category Filter Pills -->
-      <div class="tools-filter-wrapper">
-        <button class="filter-btn active" data-filter="all">Todas</button>
-        <button class="filter-btn" data-filter="analytics">Analytics & BI</button>
-        <button class="filter-btn" data-filter="ads">Ads & Gestão</button>
-        <button class="filter-btn" data-filter="design">Design & CMS</button>
-      </div>
-
-      <div class="tools-grid">
-        <div class="tool-card" data-category="analytics">
-          <i class="fa-solid fa-chart-line tool-icon text-orange"></i>
-          <span class="tool-name">Google Analytics (GA4)</span>
-          <span class="tool-tag">Métricas & Tráfego</span>
-        </div>
-        <div class="tool-card" data-category="ads">
-          <i class="fa-brands fa-meta tool-icon" style="color: #0668E1;"></i>
-          <span class="tool-name">Meta Ads & Suite</span>
-          <span class="tool-tag">Paid Social & Gestão</span>
-        </div>
-        <div class="tool-card" data-category="ads">
-          <i class="fa-brands fa-google tool-icon" style="color: #EA4335;"></i>
-          <span class="tool-name">Google Ads</span>
-          <span class="tool-tag">Search & Display</span>
-        </div>
-        <div class="tool-card" data-category="analytics">
-          <i class="fa-solid fa-chart-simple tool-icon" style="color: #4285F4;"></i>
-          <span class="tool-name">Looker Studio</span>
-          <span class="tool-tag">Dashboards</span>
-        </div>
-        <div class="tool-card" data-category="analytics">
-          <i class="fa-solid fa-chart-pie tool-icon" style="color: #F2C811;"></i>
-          <span class="tool-name">Power BI</span>
-          <span class="tool-tag">Business Intelligence</span>
-        </div>
-        <div class="tool-card" data-category="design">
-          <i class="fa-brands fa-figma tool-icon" style="color: #F24E1E;"></i>
-          <span class="tool-name">Figma</span>
-          <span class="tool-tag">Design & Prototipagem</span>
-        </div>
-        <div class="tool-card" data-category="design">
-          <i class="fa-brands fa-shopify tool-icon" style="color: #96BF48;"></i>
-          <span class="tool-name">Shopify</span>
-          <span class="tool-tag">E-Commerce</span>
-        </div>
-        <div class="tool-card" data-category="ads">
-          <i class="fa-brands fa-mailchimp tool-icon" style="color: #FFE01B;"></i>
-          <span class="tool-name">Intuit Mailchimp</span>
-          <span class="tool-tag">Email Automation</span>
-        </div>
-        <div class="tool-card" data-category="design">
-          <i class="fa-brands fa-wordpress tool-icon" style="color: #21759B;"></i>
-          <span class="tool-name">WordPress</span>
-          <span class="tool-tag">CMS & SEO</span>
-        </div>
-        <div class="tool-card" data-category="design">
-          <i class="fa-solid fa-note-sticky tool-icon" style="color: #111;"></i>
-          <span class="tool-name">Notion</span>
-          <span class="tool-tag">Gestão & Calendário</span>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+  </div>
+</section>
 
   <!-- ================= METHODOLOGY ================= -->
   <section class="methodology-section" id="methodology">
     <div class="container">
       <div class="section-heading text-center">
-        <h2 class="section-title">A Minha Metodologia</h2>
-        <p class="section-sub">Abordagem estratégica baseada em dados para soluções integradas e com impacto comercial duradouro.</p>
+        <h2 class="section-title text-orange">A Minha Metodologia</h2>
+        <p class="section-sub">Sigo uma abordagem estratégica e orientada por dados para desenvolver soluções de marketing estruturadas e abrangentes.</p>
       </div>
 
-      <!-- 4-Step Interactive Cycle Grid -->
-      <div class="methodology-grid">
+      <!-- Interactive 3x3 Cycle Grid (Esq -> Drt -> Baixo Drt -> Baixo Esq) -->
+      <div class="methodology-interactive-cycle" id="methodologyCycle">
         
-        <div class="method-card active" data-step="1">
-          <div class="step-badge">01</div>
-          <div class="method-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-          <h3 class="method-step-title">ANALYSIS</h3>
+        <!-- ROW 1, COL 1: Step 01 (ANALYSIS) -->
+        <div class="method-card step-card-1 revealed" id="methodCard1" data-step="1">
+          <div class="step-card-header">
+            <span class="step-badge">01</span>
+            <div class="method-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          </div>
+          <h3 class="method-step-title">ANÁLISE</h3>
           <p class="method-subtitle">Os 4 C's da Estratégia de Marca</p>
           <ul class="method-checklist">
             <li>Análise de mercado e tendências emergentes.</li>
@@ -390,13 +454,20 @@
             <li>Compreensão de necessidades e comportamentos do consumidor.</li>
             <li>Análise cultural e contexto envolvente.</li>
           </ul>
-          <div class="step-connector right-arrow"><i class="fa-solid fa-arrow-right"></i></div>
         </div>
 
-        <div class="method-card" data-step="2">
-          <div class="step-badge">02</div>
-          <div class="method-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-          <h3 class="method-step-title">STRATEGY</h3>
+        <!-- ROW 1, COL 2: Arrow 1 -> 2 (Right) -->
+        <button class="cycle-arrow-btn arrow-to-2 active-next" id="arrowTo2" data-target="2" title="Clique para revelar a etapa 02: Estratégia" aria-label="Avançar para Estratégia">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <!-- ROW 1, COL 3: Step 02 (STRATEGY) -->
+        <div class="method-card step-card-2" id="methodCard2" data-step="2">
+          <div class="step-card-header">
+            <span class="step-badge">02</span>
+            <div class="method-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+          </div>
+          <h3 class="method-step-title">ESTRATÉGIA</h3>
           <p class="method-subtitle">Plano de Comunicação & Editorial</p>
           <ul class="method-checklist">
             <li>Definição clara de objetivos de negócio e marketing.</li>
@@ -405,13 +476,20 @@
             <li>Desenvolvimento do ecossistema de comunicação.</li>
             <li>Criação do calendário editorial e planeamento de conteúdos.</li>
           </ul>
-          <div class="step-connector down-arrow"><i class="fa-solid fa-arrow-down"></i></div>
         </div>
 
-        <div class="method-card" data-step="3">
-          <div class="step-badge">03</div>
-          <div class="method-icon"><i class="fa-solid fa-rocket"></i></div>
-          <h3 class="method-step-title">EXECUTION</h3>
+        <!-- ROW 2, COL 3: Arrow 2 -> 3 (Down) -->
+        <button class="cycle-arrow-btn arrow-to-3" id="arrowTo3" data-target="3" title="Clique para revelar a etapa 03: Execução" aria-label="Avançar para Execução">
+          <i class="fa-solid fa-arrow-down"></i>
+        </button>
+
+        <!-- ROW 3, COL 3: Step 03 (EXECUTION) -->
+        <div class="method-card step-card-3" id="methodCard3" data-step="3">
+          <div class="step-card-header">
+            <span class="step-badge">03</span>
+            <div class="method-icon"><i class="fa-solid fa-rocket"></i></div>
+          </div>
+          <h3 class="method-step-title">EXECUÇÃO</h3>
           <p class="method-subtitle">Implementação & Ativação</p>
           <ul class="method-checklist">
             <li>Produção criativa de conteúdos e peças de campanha.</li>
@@ -419,13 +497,20 @@
             <li>Coordenação e alinhamento multicanal.</li>
             <li>Acompanhamento diário e gestão do plano de ação.</li>
           </ul>
-          <div class="step-connector left-arrow"><i class="fa-solid fa-arrow-left"></i></div>
         </div>
 
-        <div class="method-card" data-step="4">
-          <div class="step-badge">04</div>
-          <div class="method-icon"><i class="fa-solid fa-chart-line"></i></div>
-          <h3 class="method-step-title">OPTIMISATION</h3>
+        <!-- ROW 3, COL 2: Arrow 3 -> 4 (Left) -->
+        <button class="cycle-arrow-btn arrow-to-4" id="arrowTo4" data-target="4" title="Clique para revelar a etapa 04: Otimização" aria-label="Avançar para Otimização">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <!-- ROW 3, COL 1: Step 04 (OPTIMISATION) -->
+        <div class="method-card step-card-4" id="methodCard4" data-step="4">
+          <div class="step-card-header">
+            <span class="step-badge">04</span>
+            <div class="method-icon"><i class="fa-solid fa-chart-line"></i></div>
+          </div>
+          <h3 class="method-step-title">ANÁLISE & OTIMIZAÇÃO</h3>
           <p class="method-subtitle">Avaliação & Melhoria Contínua</p>
           <ul class="method-checklist">
             <li>Monitorização em tempo real de resultados.</li>
@@ -434,6 +519,11 @@
             <li>Otimização contínua de campanhas e estratégias futuras.</li>
           </ul>
         </div>
+
+        <!-- ROW 2, COL 1: Arrow 4 -> 1 (Up) -->
+        <button class="cycle-arrow-btn arrow-to-1" id="arrowTo1" data-target="1" title="Ciclo contínuo de otimização para análise" aria-label="Voltar à Análise">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
 
       </div>
 
@@ -447,145 +537,281 @@
     </div>
   </section>
 
+  <!-- ================= TOOLS & TECH STACK (DAVID GOMES STYLE INFINITE CAROUSEL) ================= -->
+  <section class="tools-section" id="tools">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2 class="section-title">Ferramentas & Tecnologias</h2>
+        <p class="section-sub">Plataformas e ferramentas que domino para análise de dados, métricas, automação, publicidade e criação.</p>
+      </div>
+    </div>
+
+    <!-- Full-width Viewport Breakout Carousel Section -->
+    <div class="skills-carousel-section">
+      
+      <!-- Track 1: Scrolling Left (6 tools repeated 3x = 18 cards) -->
+      <div class="skills-carousel-track-wrapper">
+        <div class="skills-carousel-track">
+          <!-- Set 1 -->
+          <div class="skill-card-modern">
+            <div class="skill-card-icon"><img src="assets/tools/meta.svg" alt="Meta" class="tool-logo-img"></div>
+            <span class="skill-card-name">Meta</span>
+          </div>
+          <div class="skill-card-modern">
+            <div class="skill-card-icon"><img src="assets/tools/googleanalytics.svg" alt="Google Analytics" class="tool-logo-img"></div>
+            <span class="skill-card-name">Google Analytics</span>
+          </div>
+          <div class="skill-card-modern">
+            <div class="skill-card-icon"><img src="assets/tools/googleads.svg" alt="Google Ads" class="tool-logo-img"></div>
+            <span class="skill-card-name">Google Ads</span>
+          </div>
+          <div class="skill-card-modern">
+            <div class="skill-card-icon"><img src="assets/tools/lookerstudio.svg" alt="Looker Studio" class="tool-logo-img"></div>
+            <span class="skill-card-name">Looker Studio</span>
+          </div>
+          <div class="skill-card-modern">
+            <div class="skill-card-icon"><img src="assets/tools/powerbi.svg" alt="Power BI" class="tool-logo-img"></div>
+            <span class="skill-card-name">Power BI</span>
+          </div>
+          <div class="skill-card-modern">
+            <div class="skill-card-icon"><img src="assets/tools/chatgpt.svg" alt="ChatGPT" class="tool-logo-img"></div>
+            <span class="skill-card-name">ChatGPT</span>
+          </div>
+
+          <!-- Set 2 -->
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/meta.svg" alt="Meta" class="tool-logo-img"></div>
+            <span class="skill-card-name">Meta</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/googleanalytics.svg" alt="Google Analytics" class="tool-logo-img"></div>
+            <span class="skill-card-name">Google Analytics</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/googleads.svg" alt="Google Ads" class="tool-logo-img"></div>
+            <span class="skill-card-name">Google Ads</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/lookerstudio.svg" alt="Looker Studio" class="tool-logo-img"></div>
+            <span class="skill-card-name">Looker Studio</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/powerbi.svg" alt="Power BI" class="tool-logo-img"></div>
+            <span class="skill-card-name">Power BI</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/chatgpt.svg" alt="ChatGPT" class="tool-logo-img"></div>
+            <span class="skill-card-name">ChatGPT</span>
+          </div>
+
+          <!-- Set 3 -->
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/meta.svg" alt="Meta" class="tool-logo-img"></div>
+            <span class="skill-card-name">Meta</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/googleanalytics.svg" alt="Google Analytics" class="tool-logo-img"></div>
+            <span class="skill-card-name">Google Analytics</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/googleads.svg" alt="Google Ads" class="tool-logo-img"></div>
+            <span class="skill-card-name">Google Ads</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/lookerstudio.svg" alt="Looker Studio" class="tool-logo-img"></div>
+            <span class="skill-card-name">Looker Studio</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/powerbi.svg" alt="Power BI" class="tool-logo-img"></div>
+            <span class="skill-card-name">Power BI</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/chatgpt.svg" alt="ChatGPT" class="tool-logo-img"></div>
+            <span class="skill-card-name">ChatGPT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Track 2: Scrolling Right (6 tools repeated 3x = 18 cards) -->
+      <div class="skills-carousel-track-wrapper">
+        <div class="skills-carousel-track reverse">
+          <!-- Set 1 -->
+          <div class="skill-card-modern">
+            <div class="skill-card-icon"><img src="assets/tools/shopify.svg" alt="Shopify" class="tool-logo-img"></div>
+            <span class="skill-card-name">Shopify</span>
+          </div>
+          <div class="skill-card-modern">
+            <div class="skill-card-icon"><img src="assets/tools/wordpress.svg" alt="WordPress" class="tool-logo-img"></div>
+            <span class="skill-card-name">WordPress</span>
+          </div>
+          <div class="skill-card-modern">
+            <div class="skill-card-icon"><img src="assets/tools/mailchimp.svg" alt="Mailchimp" class="tool-logo-img"></div>
+            <span class="skill-card-name">Mailchimp</span>
+          </div>
+          <div class="skill-card-modern">
+            <div class="skill-card-icon"><img src="assets/tools/notion.svg" alt="Notion" class="tool-logo-img"></div>
+            <span class="skill-card-name">Notion</span>
+          </div>
+          <div class="skill-card-modern">
+            <div class="skill-card-icon"><img src="assets/tools/github.svg" alt="GitHub" class="tool-logo-img"></div>
+            <span class="skill-card-name">GitHub</span>
+          </div>
+          <div class="skill-card-modern">
+            <div class="skill-card-icon"><img src="assets/tools/figma.svg" alt="Figma" class="tool-logo-img"></div>
+            <span class="skill-card-name">Figma</span>
+          </div>
+
+          <!-- Set 2 -->
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/shopify.svg" alt="Shopify" class="tool-logo-img"></div>
+            <span class="skill-card-name">Shopify</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/wordpress.svg" alt="WordPress" class="tool-logo-img"></div>
+            <span class="skill-card-name">WordPress</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/mailchimp.svg" alt="Mailchimp" class="tool-logo-img"></div>
+            <span class="skill-card-name">Mailchimp</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/notion.svg" alt="Notion" class="tool-logo-img"></div>
+            <span class="skill-card-name">Notion</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/github.svg" alt="GitHub" class="tool-logo-img"></div>
+            <span class="skill-card-name">GitHub</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/figma.svg" alt="Figma" class="tool-logo-img"></div>
+            <span class="skill-card-name">Figma</span>
+          </div>
+
+          <!-- Set 3 -->
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/shopify.svg" alt="Shopify" class="tool-logo-img"></div>
+            <span class="skill-card-name">Shopify</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/wordpress.svg" alt="WordPress" class="tool-logo-img"></div>
+            <span class="skill-card-name">WordPress</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/mailchimp.svg" alt="Mailchimp" class="tool-logo-img"></div>
+            <span class="skill-card-name">Mailchimp</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/notion.svg" alt="Notion" class="tool-logo-img"></div>
+            <span class="skill-card-name">Notion</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/github.svg" alt="GitHub" class="tool-logo-img"></div>
+            <span class="skill-card-name">GitHub</span>
+          </div>
+          <div class="skill-card-modern" aria-hidden="true">
+            <div class="skill-card-icon"><img src="assets/tools/figma.svg" alt="Figma" class="tool-logo-img"></div>
+            <span class="skill-card-name">Figma</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ================= PROJECTS SECTION ================= -->
   <section class="projects-section" id="projects">
     <div class="container">
       <div class="section-heading text-center">
-        <h2 class="section-title">Projetos em Destaque</h2>
+        <h2 class="section-title text-orange">Projetos em Destaque</h2>
         <p class="section-sub">Estratégias reais, planeamento 360°, identidade de marca e gestão de redes sociais.</p>
       </div>
 
       <div class="projects-grid">
         
-        <!-- PROJECT 1: KOENIGSEGG -->
-        <article class="project-card">
-          <div class="project-top">
+        <!-- PROJECT 1: KOENIGSEGG (Card Visual Limpo com Abertura em Pop-up) -->
+        <article class="project-card project-card-visual" data-modal="modal-koenigsegg" role="button" tabindex="0" title="Clica para abrir o projeto Koenigsegg">
+          <!-- Topo: Folha / Capa do Documento em Destaque -->
+          <div class="project-visual-cover">
+            <img src="assets/projects/koenigsegg/page-1.png" alt="Koenigsegg — Estratégia de Redes Sociais" class="visual-cover-img" loading="lazy">
+            <div class="visual-hover-overlay">
+              <span class="visual-open-pill"><i class="fa-solid fa-expand"></i> Ver Projeto</span>
+            </div>
+          </div>
+
+          <!-- Base: Metadados, Título e Descrição Resumida -->
+          <div class="project-visual-info">
             <div class="project-discipline">
-              <span class="badge-discipline"><i class="fa-solid fa-hashtag"></i> Social Media</span>
-              <span class="badge-type">CTeSP Project</span>
+              <span class="badge-category"><i class="fa-solid fa-bullhorn"></i> Redes Sociais</span>
+              <span class="badge-tag">Projeto CTeSP</span>
             </div>
-            <h3 class="project-title">KOENIGSEGG — Digital Strategy</h3>
-            <p class="project-concept">
-              <i class="fa-solid fa-quote-left text-orange"></i> 
-              <em>"Designed and Engineered by Dreamers"</em>
+            <h3 class="project-visual-title">KOENIGSEGG — Estratégia Digital</h3>
+            <p class="project-visual-desc">
+              Estratégia integral de posicionamento e redes sociais para a Koenigsegg com o conceito "Designed and Engineered by Dreamers", cobrindo grelha visual e calendário editorial.
             </p>
-          </div>
-
-          <div class="project-body">
-            <div class="accordion-item active">
-              <div class="accordion-header"><span class="step-num">01</span> Desafio</div>
-              <div class="accordion-content">
-                Identificar uma marca de prestígio com margem de melhoria digital. Embora a Koenigsegg tenha uma posição incontestável no mercado hiperdesportivo, a presença nas redes sociais não refletia totalmente a sua identidade. O desafio foi aproximar a comunicação do que a marca representa através de consistência e distinção.
-              </div>
+            <div class="project-visual-footer">
+              <span class="view-project-link">
+                <span>Ver Projeto</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
             </div>
-
-            <div class="accordion-item">
-              <div class="accordion-header"><span class="step-num">02</span> Abordagem</div>
-              <div class="accordion-content">
-                Análise aprofundada da identidade da marca, concorrência direta e comportamento da audiência global. Mapeamento de oportunidades de conteúdos e definição dos territórios de comunicação estratégicos a explorar.
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="accordion-header"><span class="step-num">03</span> Resultados & Entrega</div>
-              <div class="accordion-content">
-                Criação de um novo rumo de comunicação com o conceito <em>"Designed and Engineered by Dreamers"</em>, cobrindo tom de voz adaptado, pilares de conteúdo, grelha visual e calendário editorial com publicações práticas.
-              </div>
-            </div>
-          </div>
-
-          <div class="project-footer">
-            <a href="https://canva.link/9htzv8b2qjcw25u" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Apresentação Completa
-            </a>
           </div>
         </article>
 
-        <!-- PROJECT 2: SAOLOTO SURF SCHOOL -->
-        <article class="project-card">
-          <div class="project-top">
+        <!-- PROJECT 2: SAOLOTO SURF SCHOOL (Card Visual Limpo com Abertura em Pop-up) -->
+        <article class="project-card project-card-visual" data-modal="modal-saoloto" role="button" tabindex="0" title="Clica para abrir o projeto Saoloto Surf School">
+          <!-- Topo: Folha / Capa do Documento em Destaque -->
+          <div class="project-visual-cover">
+            <img src="assets/projects/saoloto/page-1.png" alt="Saoloto Surf School — Go-To-Market" class="visual-cover-img" loading="lazy">
+            <div class="visual-hover-overlay">
+              <span class="visual-open-pill"><i class="fa-solid fa-expand"></i> Ver Projeto</span>
+            </div>
+          </div>
+
+          <!-- Base: Metadados, Título e Descrição Resumida -->
+          <div class="project-visual-info">
             <div class="project-discipline">
-              <span class="badge-discipline"><i class="fa-solid fa-chess"></i> Strategy</span>
-              <span class="badge-type">CTeSP Project</span>
+              <span class="badge-category"><i class="fa-solid fa-chess"></i> Estratégia</span>
+              <span class="badge-tag">Projeto CTeSP</span>
             </div>
-            <h3 class="project-title">Saoloto Surf School — GTM</h3>
-            <p class="project-concept">
-              <i class="fa-solid fa-water text-orange"></i>
-              Estratégia Go-To-Market & Ecossistema de Comunicação
+            <h3 class="project-visual-title">Saoloto Surf School — Estratégia GTM</h3>
+            <p class="project-visual-desc">
+              Estratégia completa de Go-To-Market (GTM), definindo branding, posicionamento e ecossistema de comunicação integrado multicanal.
             </p>
-          </div>
-
-          <div class="project-body">
-            <div class="accordion-item active">
-              <div class="accordion-header"><span class="step-num">01</span> Desafio</div>
-              <div class="accordion-content">
-                Desenvolver uma estratégia completa de Go-To-Market (GTM) para uma nova marca, definindo branding, posicionamento e plano de ação integrado através de todos os pontos de contacto ao longo do funil de marketing.
-              </div>
+            <div class="project-visual-footer">
+              <span class="view-project-link">
+                <span>Ver Projeto</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
             </div>
-
-            <div class="accordion-item">
-              <div class="accordion-header"><span class="step-num">02</span> Abordagem</div>
-              <div class="accordion-content">
-                Pesquisa exaustiva do mercado nacional e internacional de desportos de ondas (Costa da Caparica), análise de concorrentes, personas de consumidores e contexto cultural para criar diferenciação e fidelização.
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="accordion-header"><span class="step-num">03</span> Resultados & Entrega</div>
-              <div class="accordion-content">
-                Criação integral da Saoloto Surf School: identidade, narrativa de marca, plano de marketing de conteúdo, SEO, estratégias com influenciadores e dashboard de métricas para acompanhamento da implementação.
-              </div>
-            </div>
-          </div>
-
-          <div class="project-footer">
-            <a href="https://docs.google.com/document/d/1nyJL0La-Y9aVfhH8O77bKwNDdBvpBbzNKygbAtj7XVI/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">
-              <i class="fa-solid fa-file-lines"></i> Ver Documento / Business Case (GDocs)
-            </a>
           </div>
         </article>
 
-        <!-- PROJECT 3: BRIO. -->
-        <article class="project-card">
-          <div class="project-top">
+        <!-- PROJECT 3: BRIO. (Card Visual Limpo com Abertura em Pop-up) -->
+        <article class="project-card project-card-visual" data-modal="modal-brio" role="button" tabindex="0" title="Clica para abrir o projeto Brio">
+          <!-- Topo: Folha / Capa do Documento em Destaque -->
+          <div class="project-visual-cover">
+            <img src="assets/projects/brio/page-1.png" alt="Brio. — Plano de Marketing" class="visual-cover-img" loading="lazy">
+            <div class="visual-hover-overlay">
+              <span class="visual-open-pill"><i class="fa-solid fa-expand"></i> Ver Projeto</span>
+            </div>
+          </div>
+
+          <!-- Base: Metadados, Título e Descrição Resumida -->
+          <div class="project-visual-info">
             <div class="project-discipline">
-              <span class="badge-discipline"><i class="fa-solid fa-compass-drafting"></i> Strategy</span>
-              <span class="badge-type">Estágio Inovcorp</span>
+              <span class="badge-category"><i class="fa-solid fa-compass-drafting"></i> Estratégia</span>
+              <span class="badge-tag">Estágio Inovcorp</span>
             </div>
-            <h3 class="project-title">Brio. — Launch Marketing Plan</h3>
-            <p class="project-concept">
-              <i class="fa-solid fa-building text-orange"></i>
-              Plano de Lançamento & Calendário a 90 Dias
+            <h3 class="project-visual-title">Brio. — Plano de Marketing de Lançamento</h3>
+            <p class="project-visual-desc">
+              Plano de Marketing estratégico para o lançamento da Brio no mercado de Construção, Remodelação e Imobiliária, estruturando posicionamento e captação de leads.
             </p>
-          </div>
-
-          <div class="project-body">
-            <div class="accordion-item active">
-              <div class="accordion-header"><span class="step-num">01</span> Desafio</div>
-              <div class="accordion-content">
-                Desenvolver o Plano de Marketing para o lançamento da marca Brio., respondendo aos objetivos de reconhecimento de marca, posicionamento digital e geração de leads qualificadas no setor de Construção e Imobiliário.
-              </div>
+            <div class="project-visual-footer">
+              <span class="view-project-link">
+                <span>Ver Projeto</span>
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </span>
             </div>
-
-            <div class="accordion-item">
-              <div class="accordion-header"><span class="step-num">02</span> Abordagem</div>
-              <div class="accordion-content">
-                Mapeamento do cenário competitivo direto e indireto no setor de Construção & Remodelação e Imobiliário. Estudo detalhado do perfil demográfico e psicográfico do cliente e jornada de tomada de decisão.
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <div class="accordion-header"><span class="step-num">03</span> Resultados & Entrega</div>
-              <div class="accordion-content">
-                Plano de Marketing com estratégia de posicionamento, marketing mix, seleção criteriosa de canais, plano editorial de conteúdos para 90 dias e sistema de KPIs alinhado com as metas de negócio.
-              </div>
-            </div>
-          </div>
-
-          <div class="project-footer">
-            <a href="mailto:danielam.workmail@gmail.com" class="btn btn-outline btn-block">
-              <i class="fa-solid fa-envelope"></i> Contactar sobre este Projeto
-            </a>
           </div>
         </article>
 
@@ -597,19 +823,770 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-links-row">
-        <a href="tel:+351965711655"><i class="fa-solid fa-phone"></i> +351 965 711 655</a>
-        <a href="mailto:danielam.workmail@gmail.com"><i class="fa-solid fa-envelope"></i> danielam.workmail@gmail.com</a>
-        <a href="https://www.linkedin.com/in/daniel-amorim-marques-2092b6295/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-        <a href="https://canva.link/8r5ul8tiru9cutq" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf"></i> Curriculum Vitae</a>
+        <button class="footer-link-btn copy-btn" data-copy="+351 965 711 655" title="Clique para copiar">
+          <i class="fa-solid fa-phone"></i>
+          <span>+351 965 711 655</span>
+          <i class="fa-regular fa-copy pill-copy-icon"></i>
+        </button>
+        <button class="footer-link-btn copy-btn" data-copy="danielam.workmail@gmail.com" title="Clique para copiar">
+          <i class="fa-solid fa-envelope"></i>
+          <span>danielam.workmail@gmail.com</span>
+          <i class="fa-regular fa-copy pill-copy-icon"></i>
+        </button>
+        <a href="https://www.linkedin.com/in/daniel-amorim-marques-2092b6295/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+          <i class="fa-solid fa-arrow-up-right-from-square pill-ext-icon"></i>
+        </a>
+        <button class="footer-link-btn" data-modal="modal-cv" title="Abrir Curriculum Vitae">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span>Curriculum Vitae</span>
+        </button>
       </div>
       <p class="footer-copy">© 2026 Daniel Marques. Todos os direitos reservados.</p>
-      <p class="footer-sub">Digital Marketing & Strategy Portfolio • Lisboa, Portugal</p>
+      <p class="footer-sub">Portfólio de Marketing Digital & Estratégia • Lisboa, Portugal</p>
     </div>
   </footer>
+
+  
+  <!-- ================= PROJECT MODAL: KOENIGSEGG ================= -->
+  <div id="modal-koenigsegg" class="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-koenigsegg-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    
+    <div class="modal-container">
+      <div class="modal-grid">
+        <!-- COLUNA ESQUERDA: 3 PONTOS (Desafio, Abordagem, Resultado) -->
+        <div class="modal-left-col">
+          <div class="modal-project-header">
+            <div class="project-discipline">
+              <span class="badge-discipline"><i class="fa-solid fa-hashtag"></i> Redes Sociais</span>
+              <span class="badge-type">Projeto CTeSP</span>
+            </div>
+            <h2 id="modal-koenigsegg-title" class="modal-title">KOENIGSEGG — Estratégia Digital</h2>
+            <p class="modal-concept">
+              <i class="fa-solid fa-car text-orange"></i>
+              <em>"Designed and Engineered by Dreamers"</em>
+            </p>
+          </div>
+
+          <div class="modal-points-group">
+            <div class="modal-point-item">
+              <div class="point-header">
+                <span class="step-num">01</span>
+                <h4>Desafio</h4>
+              </div>
+              <p class="point-desc">
+                Identificar uma marca de prestígio com margem de melhoria digital. Embora a Koenigsegg tenha uma posição incontestável no mercado hiperdesportivo, a presença nas redes sociais não refletia totalmente a sua identidade. O desafio foi aproximar a comunicação do que a marca representa através de consistência e distinção.
+              </p>
+            </div>
+
+            <div class="modal-point-item">
+              <div class="point-header">
+                <span class="step-num">02</span>
+                <h4>Abordagem</h4>
+              </div>
+              <p class="point-desc">
+                Análise aprofundada da identidade da marca, concorrência direta e comportamento da audiência global. Mapeamento de oportunidades de conteúdos e definição dos territórios de comunicação estratégicos a explorar.
+              </p>
+            </div>
+
+            <div class="modal-point-item">
+              <div class="point-header">
+                <span class="step-num">03</span>
+                <h4>Resultado</h4>
+              </div>
+              <p class="point-desc">
+                Criação de um novo rumo de comunicação com o conceito <em>"Designed and Engineered by Dreamers"</em>, cobrindo tom de voz adaptado, pilares de conteúdo, grelha visual e calendário editorial com publicações práticas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUNA DIREITA: DOCUMENTO COM SCROLL & LINK PARA APRESENTAÇÃO COMPLETA -->
+        <div class="modal-right-col">
+          <div class="doc-viewer-header">
+            <div class="doc-viewer-title">
+              <i class="fa-solid fa-file-powerpoint text-orange"></i>
+              <span>Documento da Apresentação</span>
+              <span class="doc-page-counter">127 Slides</span>
+            </div>
+            <button class="modal-close-btn" data-close-modal aria-label="Fechar pop-up">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- Contentor dos Slides com Scroll Vertical -->
+          <div class="doc-viewer-scroll">
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-1.png" alt="Koenigsegg Slide 1" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-2.png" alt="Koenigsegg Slide 2" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-3.png" alt="Koenigsegg Slide 3" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-4.png" alt="Koenigsegg Slide 4" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-5.png" alt="Koenigsegg Slide 5" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-6.png" alt="Koenigsegg Slide 6" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-7.png" alt="Koenigsegg Slide 7" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-8.png" alt="Koenigsegg Slide 8" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-9.png" alt="Koenigsegg Slide 9" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-10.png" alt="Koenigsegg Slide 10" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-11.png" alt="Koenigsegg Slide 11" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-12.png" alt="Koenigsegg Slide 12" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-13.png" alt="Koenigsegg Slide 13" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-14.png" alt="Koenigsegg Slide 14" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-15.png" alt="Koenigsegg Slide 15" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-16.png" alt="Koenigsegg Slide 16" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-17.png" alt="Koenigsegg Slide 17" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-18.png" alt="Koenigsegg Slide 18" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-19.png" alt="Koenigsegg Slide 19" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-20.png" alt="Koenigsegg Slide 20" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-21.png" alt="Koenigsegg Slide 21" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-22.png" alt="Koenigsegg Slide 22" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-23.png" alt="Koenigsegg Slide 23" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-24.png" alt="Koenigsegg Slide 24" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-25.png" alt="Koenigsegg Slide 25" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-26.png" alt="Koenigsegg Slide 26" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-27.png" alt="Koenigsegg Slide 27" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-28.png" alt="Koenigsegg Slide 28" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-29.png" alt="Koenigsegg Slide 29" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-30.png" alt="Koenigsegg Slide 30" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-31.png" alt="Koenigsegg Slide 31" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-32.png" alt="Koenigsegg Slide 32" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-33.png" alt="Koenigsegg Slide 33" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-34.png" alt="Koenigsegg Slide 34" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-35.png" alt="Koenigsegg Slide 35" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-36.png" alt="Koenigsegg Slide 36" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-37.png" alt="Koenigsegg Slide 37" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-38.png" alt="Koenigsegg Slide 38" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-39.png" alt="Koenigsegg Slide 39" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-40.png" alt="Koenigsegg Slide 40" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-41.png" alt="Koenigsegg Slide 41" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-42.png" alt="Koenigsegg Slide 42" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-43.png" alt="Koenigsegg Slide 43" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-44.png" alt="Koenigsegg Slide 44" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-45.png" alt="Koenigsegg Slide 45" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-46.png" alt="Koenigsegg Slide 46" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-47.png" alt="Koenigsegg Slide 47" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-48.png" alt="Koenigsegg Slide 48" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-49.png" alt="Koenigsegg Slide 49" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-50.png" alt="Koenigsegg Slide 50" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-51.png" alt="Koenigsegg Slide 51" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-52.png" alt="Koenigsegg Slide 52" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-53.png" alt="Koenigsegg Slide 53" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-54.png" alt="Koenigsegg Slide 54" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-55.png" alt="Koenigsegg Slide 55" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-56.png" alt="Koenigsegg Slide 56" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-57.png" alt="Koenigsegg Slide 57" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-58.png" alt="Koenigsegg Slide 58" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-59.png" alt="Koenigsegg Slide 59" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-60.png" alt="Koenigsegg Slide 60" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-61.png" alt="Koenigsegg Slide 61" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-62.png" alt="Koenigsegg Slide 62" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-63.png" alt="Koenigsegg Slide 63" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-64.png" alt="Koenigsegg Slide 64" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-65.png" alt="Koenigsegg Slide 65" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-66.png" alt="Koenigsegg Slide 66" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-67.png" alt="Koenigsegg Slide 67" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-68.png" alt="Koenigsegg Slide 68" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-69.png" alt="Koenigsegg Slide 69" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-70.png" alt="Koenigsegg Slide 70" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-71.png" alt="Koenigsegg Slide 71" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-72.png" alt="Koenigsegg Slide 72" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-73.png" alt="Koenigsegg Slide 73" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-74.png" alt="Koenigsegg Slide 74" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-75.png" alt="Koenigsegg Slide 75" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-76.png" alt="Koenigsegg Slide 76" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-77.png" alt="Koenigsegg Slide 77" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-78.png" alt="Koenigsegg Slide 78" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-79.png" alt="Koenigsegg Slide 79" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-80.png" alt="Koenigsegg Slide 80" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-81.png" alt="Koenigsegg Slide 81" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-82.png" alt="Koenigsegg Slide 82" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-83.png" alt="Koenigsegg Slide 83" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-84.png" alt="Koenigsegg Slide 84" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-85.png" alt="Koenigsegg Slide 85" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-86.png" alt="Koenigsegg Slide 86" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-87.png" alt="Koenigsegg Slide 87" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-88.png" alt="Koenigsegg Slide 88" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-89.png" alt="Koenigsegg Slide 89" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-90.png" alt="Koenigsegg Slide 90" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-91.png" alt="Koenigsegg Slide 91" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-92.png" alt="Koenigsegg Slide 92" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-93.png" alt="Koenigsegg Slide 93" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-94.png" alt="Koenigsegg Slide 94" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-95.png" alt="Koenigsegg Slide 95" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-96.png" alt="Koenigsegg Slide 96" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-97.png" alt="Koenigsegg Slide 97" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-98.png" alt="Koenigsegg Slide 98" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-99.png" alt="Koenigsegg Slide 99" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-100.png" alt="Koenigsegg Slide 100" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-101.png" alt="Koenigsegg Slide 101" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-102.png" alt="Koenigsegg Slide 102" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-103.png" alt="Koenigsegg Slide 103" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-104.png" alt="Koenigsegg Slide 104" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-105.png" alt="Koenigsegg Slide 105" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-106.png" alt="Koenigsegg Slide 106" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-107.png" alt="Koenigsegg Slide 107" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-108.png" alt="Koenigsegg Slide 108" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-109.png" alt="Koenigsegg Slide 109" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-110.png" alt="Koenigsegg Slide 110" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-111.png" alt="Koenigsegg Slide 111" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-112.png" alt="Koenigsegg Slide 112" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-113.png" alt="Koenigsegg Slide 113" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-114.png" alt="Koenigsegg Slide 114" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-115.png" alt="Koenigsegg Slide 115" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-116.png" alt="Koenigsegg Slide 116" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-117.png" alt="Koenigsegg Slide 117" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-118.png" alt="Koenigsegg Slide 118" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-119.png" alt="Koenigsegg Slide 119" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-120.png" alt="Koenigsegg Slide 120" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-121.png" alt="Koenigsegg Slide 121" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-122.png" alt="Koenigsegg Slide 122" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-123.png" alt="Koenigsegg Slide 123" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-124.png" alt="Koenigsegg Slide 124" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-125.png" alt="Koenigsegg Slide 125" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-126.png" alt="Koenigsegg Slide 126" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/koenigsegg/pt/page-127.png" alt="Koenigsegg Slide 127" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Rodapé com Botão em Destaque para Abrir o PDF Fullscreen -->
+          <div class="doc-viewer-footer">
+            <a href="assets/projects/koenigsegg/koenigsegg-pt.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block btn-pdf-fullscreen">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Apresentação Completa (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- ================= PROJECT MODAL: SAOLOTO SURF SCHOOL ================= -->
+  <div id="modal-saoloto" class="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-saoloto-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    
+    <div class="modal-container">
+      <div class="modal-grid">
+        <!-- COLUNA ESQUERDA: 3 PONTOS (Desafio, Abordagem, Resultado) -->
+        <div class="modal-left-col">
+          <div class="modal-project-header">
+            <div class="project-discipline">
+              <span class="badge-discipline"><i class="fa-solid fa-chess"></i> Estratégia</span>
+              <span class="badge-type">Projeto CTeSP</span>
+            </div>
+            <h2 id="modal-saoloto-title" class="modal-title">Saoloto Surf School — Estratégia GTM</h2>
+            <p class="modal-concept">
+              <i class="fa-solid fa-water text-orange"></i>
+              Estratégia Go-To-Market & Ecossistema de Comunicação
+            </p>
+          </div>
+
+          <div class="modal-points-group">
+            <div class="modal-point-item">
+              <div class="point-header">
+                <span class="step-num">01</span>
+                <h4>Desafio</h4>
+              </div>
+              <p class="point-desc">
+                Criar, a partir de uma marca fictícia, uma estratégia Go-To-Market (GTM) que definisse o seu branding, posicionamento e plano de ação, construindo um ecossistema de comunicação integrado entre diferentes touchpoints e canais ao longo do funil de marketing.
+              </p>
+            </div>
+
+            <div class="modal-point-item">
+              <div class="point-header">
+                <span class="step-num">02</span>
+                <h4>Abordagem</h4>
+              </div>
+              <p class="point-desc">
+                A estratégia partiu da compreensão do mercado nacional e internacional, da concorrência, do consumidor e da cultura, procurando identificar oportunidades capazes de dar à marca um território próprio e relevante. A partir destes insights, foi definida uma direção estratégica orientada para a diferenciação e construção de uma relação próxima com a audiência.
+              </p>
+            </div>
+
+            <div class="modal-point-item">
+              <div class="point-header">
+                <span class="step-num">03</span>
+                <h4>Resultado</h4>
+              </div>
+              <p class="point-desc">
+                Foi criada a Saoloto Surf School, com definição da sua identidade, posicionamento e narrativa, acompanhada por um plano de comunicação e ação. A estratégia integrou diferentes canais e iniciativas, desde conteúdo e SEO a influencer marketing, com objetivos e métricas definidos para acompanhar a sua implementação.
+              </p>
+            </div>
+
+            <!-- Documento Estratégico Complementar -->
+            <div class="modal-point-item modal-point-doc">
+              <div class="point-header">
+                <i class="fa-solid fa-file-lines text-orange"></i>
+                <h4>Documento de Estratégia</h4>
+              </div>
+              <p class="point-desc">
+                Documento de aprofundamento analítico e planeamento tático de campanhas.
+              </p>
+              <a href="assets/projects/saoloto/saoloto-estrategia-campanhas.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block" style="margin-top: 10px; font-size: 0.85rem;">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Estratégia e Planeamento (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUNA DIREITA: DOCUMENTO COM SCROLL & LINK PARA APRESENTAÇÃO COMPLETA -->
+        <div class="modal-right-col">
+          <div class="doc-viewer-header">
+            <div class="doc-viewer-title">
+              <i class="fa-solid fa-file-powerpoint text-orange"></i>
+              <span>Documento da Apresentação</span>
+              <span class="doc-page-counter">13 Slides</span>
+            </div>
+            <button class="modal-close-btn" data-close-modal aria-label="Fechar pop-up">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- Contentor dos Slides com Scroll Vertical -->
+          <div class="doc-viewer-scroll">
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-1.png" alt="Saoloto Slide 1" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-2.png" alt="Saoloto Slide 2" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-3.png" alt="Saoloto Slide 3" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-4.png" alt="Saoloto Slide 4" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-5.png" alt="Saoloto Slide 5" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-6.png" alt="Saoloto Slide 6" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-7.png" alt="Saoloto Slide 7" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-8.png" alt="Saoloto Slide 8" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-9.png" alt="Saoloto Slide 9" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-10.png" alt="Saoloto Slide 10" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-11.png" alt="Saoloto Slide 11" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-12.png" alt="Saoloto Slide 12" loading="lazy">
+            </div>
+            <div class="doc-slide">
+              <img src="assets/projects/saoloto/slides/page-13.png" alt="Saoloto Slide 13" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Rodapé com Botão em Destaque para Abrir o PDF Fullscreen -->
+          <div class="doc-viewer-footer">
+            <a href="assets/projects/saoloto/saoloto-portfolio-pt.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block btn-pdf-fullscreen">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Apresentação Completa (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PROJECT MODAL: BRIO ================= -->
+  <div id="modal-brio" class="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-brio-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-container">
+      <div class="modal-grid">
+        <!-- COLUNA ESQUERDA: 3 PONTOS (Desafio, Abordagem, Resultado) -->
+        <div class="modal-left-col">
+          <div class="modal-project-header">
+            <div class="project-discipline">
+              <span class="badge-discipline"><i class="fa-solid fa-compass-drafting"></i> Estratégia</span>
+              <span class="badge-type">Estágio Inovcorp</span>
+            </div>
+            <h2 id="modal-brio-title" class="modal-title">Brio. — Plano de Marketing de Lançamento</h2>
+            <p class="modal-concept">
+              <i class="fa-solid fa-building text-orange"></i>
+              Construção & Remodelação • Imobiliária
+            </p>
+          </div>
+
+          <div class="modal-points-group">
+            <div class="modal-point-item">
+              <div class="point-header">
+                <span class="step-num">01</span>
+                <h4>Desafio</h4>
+              </div>
+              <p class="point-desc">
+                Criar um Plano de Marketing para o lançamento da Brio no mercado, capaz de responder aos objetivos de notoriedade, posicionamento digital e captação de leads, mantendo as diretrizes de comunicação previamente estabelecidas no briefing.
+              </p>
+            </div>
+
+            <div class="modal-point-item">
+              <div class="point-header">
+                <span class="step-num">02</span>
+                <h4>Abordagem</h4>
+              </div>
+              <p class="point-desc">
+                A estratégia partiu do mapeamento do panorama competitivo nos mercados de Construção & Remodelação e Imobiliária, analisando concorrentes diretos e indiretos. Foi também explorado o público-alvo, através das suas características demográficas e psicográficas, bem como a sua jornada de decisão.
+              </p>
+            </div>
+
+            <div class="modal-point-item">
+              <div class="point-header">
+                <span class="step-num">03</span>
+                <h4>Resultado</h4>
+              </div>
+              <p class="point-desc">
+                Definição do ecossistema de comunicação e pilares de conteúdo, funil de captação (Instagram, Meta Ads, Google Ads), plano editorial de 90 dias e sistema de monitorização de KPIs a curto, médio e longo prazo para solidificação do "Padrão Brio".
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUNA DIREITA: DOCUMENTO COM SCROLL & LINK PARA APRESENTAÇÃO COMPLETA -->
+        <div class="modal-right-col">
+          <div class="doc-viewer-header">
+            <div class="doc-viewer-title">
+              <i class="fa-solid fa-file-powerpoint text-orange"></i>
+              <span>Documento da Apresentação</span>
+              <span class="doc-page-counter">11 Slides</span>
+            </div>
+            <button class="modal-close-btn" data-close-modal aria-label="Fechar pop-up">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <div class="doc-viewer-scroll">
+            <div class="doc-slide"><img src="assets/projects/brio/page-1.png" alt="Brio - Slide 1 (Capa: Construímos com Brio)" loading="lazy"></div>
+            <div class="doc-slide"><img src="assets/projects/brio/page-2.png" alt="Brio - Slide 2 (01. Quem é a Brio)" loading="lazy"></div>
+            <div class="doc-slide"><img src="assets/projects/brio/page-3.png" alt="Brio - Slide 3 (02. Mercados & Concorrência)" loading="lazy"></div>
+            <div class="doc-slide"><img src="assets/projects/brio/page-4.png" alt="Brio - Slide 4 (03. Público-Alvo: Personas)" loading="lazy"></div>
+            <div class="doc-slide"><img src="assets/projects/brio/page-5.png" alt="Brio - Slide 5 (03. Persona Marta Oliveira)" loading="lazy"></div>
+            <div class="doc-slide"><img src="assets/projects/brio/page-6.png" alt="Brio - Slide 6 (04. Estratégia: Mensagem Central)" loading="lazy"></div>
+            <div class="doc-slide"><img src="assets/projects/brio/page-7.png" alt="Brio - Slide 7 (04. Pilares de Conteúdo)" loading="lazy"></div>
+            <div class="doc-slide"><img src="assets/projects/brio/page-8.png" alt="Brio - Slide 8 (04. Touchpoints & Funil)" loading="lazy"></div>
+            <div class="doc-slide"><img src="assets/projects/brio/page-9.png" alt="Brio - Slide 9 (05. Monitorização: Metas & Medição)" loading="lazy"></div>
+            <div class="doc-slide"><img src="assets/projects/brio/page-10.png" alt="Brio - Slide 10 (06. Futuro: Padrão Brio)" loading="lazy"></div>
+            <div class="doc-slide"><img src="assets/projects/brio/page-11.png" alt="Brio - Slide 11 (Obrigado!)" loading="lazy"></div>
+          </div>
+
+          <div class="doc-viewer-footer">
+            <a href="assets/projects/brio/brio-plano-marketing.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Apresentação Completa (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Notification Toast for Copy -->
   <div id="toast" class="toast">Texto copiado para a área de transferência!</div>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
+
+  <!-- ================= CV MODAL ================= -->
+  <div id="modal-cv" class="project-modal cv-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-cv-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    
+    <div class="modal-container cv-modal-container">
+      <div class="cv-modal-header">
+        <div class="cv-header-title-box">
+          <i class="fa-solid fa-file-lines text-orange cv-icon-main"></i>
+          <div>
+            <h3 id="modal-cv-title" class="cv-modal-title">Curriculum Vitae</h3>
+            <span class="cv-modal-subtitle">Daniel Marques • Marketing Digital & Estratégia</span>
+          </div>
+        </div>
+
+        <button class="modal-close-btn" data-close-modal aria-label="Fechar CV">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- CV Document Viewport com Scroll -->
+      <div class="cv-modal-body">
+        <div class="cv-preview-scroll">
+          <div class="cv-sheet-wrapper">
+            <img id="cv-preview-img" src="assets/cv/cv-pt.png" alt="Curriculum Vitae Daniel Marques" class="cv-sheet-img" loading="eager">
+          </div>
+        </div>
+      </div>
+
+      <!-- CV Modal Footer com Ações -->
+      <div class="cv-modal-footer">
+        <div class="cv-footer-meta">
+          <span class="cv-meta-pill">
+            <i class="fa-solid fa-file-pdf text-orange"></i> Formato A4 • 1 Página
+          </span>
+        </div>
+        <div class="cv-footer-actions">
+          <a id="cv-download-btn" href="assets/cv/cv-daniel-marques-pt.pdf" download="CV_Daniel_Marques_PT.pdf" class="btn btn-secondary btn-sm">
+            <i class="fa-solid fa-download"></i> Descarregar PDF
+          </a>
+          <a id="cv-fullscreen-btn" href="assets/cv/cv-daniel-marques-pt.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm btn-pdf-fullscreen">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Apresentação Completa (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
